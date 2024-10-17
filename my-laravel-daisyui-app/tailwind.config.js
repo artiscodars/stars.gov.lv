@@ -8,9 +8,7 @@ module.exports = {
     theme: {
         extend: {},
     },
-    plugins: [
-        require('daisyui'), // Make sure DaisyUI is included as a plugin
-    ],
+
     theme: {
         extend: {
             colors: {
@@ -25,8 +23,8 @@ module.exports = {
                 error: '#EB694',     // Error color (like for error messages)
             },
             fontFamily: {
+                sans: ['"Source Sans 3"', 'sans-serif'],  // Set Source Sans 3 as the default sans font
                 serif: ['"Source Serif 4"', 'serif'],  // For headings (H1, H2)
-                sans: ['"Source Sans 3"', 'sans-serif'], // For paragraphs, descriptions, buttons
             },
 
         },
