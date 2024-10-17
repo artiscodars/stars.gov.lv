@@ -31,6 +31,8 @@
         <!-- Website Title -->
         <a href="/"><img src="{{ asset('images/stars-logo.svg') }}" alt="Stars" class="h-12"></a>
 
-        @include('includes.top-menu', ['topMenu' => $topMenu])
+
+
+        @include('includes.top-menu', ['menu' => $menu])
     </div>
 </header>

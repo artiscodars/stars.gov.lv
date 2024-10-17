@@ -4,30 +4,75 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
 // Function to load both menus
-function loadMenus()
+function loadMenu()
 {
-    $leftMenu = json_decode(Storage::get('menu-left.json'), true);
-    $topMenu = json_decode(Storage::get('menu-top.json'), true);
-    return [
-        'leftMenu' => $leftMenu,
-        'topMenu' => $topMenu
-    ];
+    // Load the structure.json file
+    $filePath = 'structure.json';
+
+    if (Storage::exists($filePath)) {
+        $menu = json_decode(Storage::get($filePath), true);
+
+        // If the file could not be loaded or the JSON is invalid
+        if ($menu === null) {
+            abort(500, "Failed to load menu from structure.json");
+        }
+
+        return $menu;
+    } else {
+        abort(500, "Menu file not found.");
+    }
 }
+
+// Function to recursively search the menu structure for submenu: true
+function findSubmenu($menu, $currentPath)
+{
+    foreach ($menu as $item) {
+        // Check if the current path matches the route or if the current path is within the route
+        if (Request::is($item['route']) || Request::is($item['route'] . '/*')) {
+            // If the item has a submenu, return the children as the submenu
+            if (isset($item['submenu']) && $item['submenu'] === true) {
+                return $item['children']; // Return the submenu (children)
+            }
+        }
+
+        // If there are children, check recursively
+        if (!empty($item['children'])) {
+            $submenu = findSubmenu($item['children'], $currentPath);
+            if ($submenu) {
+                return $submenu; // Return the found submenu
+            }
+        }
+    }
+    return false;
+}
+
+// Function to load the submenu related to the current path
+function submenu()
+{
+    // Load the structure.json file
+    $menu = loadMenu();
+
+    // Get the current route path
+    $currentPath = Request::path();
+
+    // Call the recursive function to find the submenu related to the current path
+    return findSubmenu($menu, $currentPath);
+}
+
 
 // Home route that loads the home
 Route::get('/', function () {
-    $menus = loadMenus();
+    $menu = loadMenu();
 
     // Always return the home view with both menus
     return view('pages.home', [
-        'leftMenu' => $menus['leftMenu'],
-        'topMenu' => $menus['topMenu']
+        'menu' => $menu,
     ]);
 })->name('home');
 
 // Dynamic route for both section and subsection
 Route::get('/{section}/{subsection?}', function ($section, $subsection = null) {
-    $menus = loadMenus();
+    $menu = loadMenu();
 
     // Determine the view name based on the section and subsection
     $viewName = 'pages.' . $section;
@@ -40,14 +85,12 @@ Route::get('/{section}/{subsection?}', function ($section, $subsection = null) {
     if (view()->exists($viewName)) {
         // Return the view with both menus
         return view($viewName, [
-            'leftMenu' => $menus['leftMenu'],
-            'topMenu' => $menus['topMenu']
+            'menu' => $menu,
         ]);
     }
 
     // If the view doesn't exist, return a 404 error with the menus
     return response()->view('errors.404', [
-        'leftMenu' => $menus['leftMenu'],
-        'topMenu' => $menus['topMenu']
+        'menu' => $menu,
     ], 404);
 })->name('dynamic.page');

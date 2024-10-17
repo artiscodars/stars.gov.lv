@@ -9,9 +9,9 @@
 @endsection
 
 @section('leftMenu')
-@include('includes.left-menu', ['leftMenu' => $leftMenu])
+@include('includes.left-menu', ['menu' => $menu])
 @endsection
 
 @section('topMenu')
-@include('includes.top-menu', ['topMenu' => $topMenu])
+@include('includes.top-menu', ['menu' => $menu])
 @endsection

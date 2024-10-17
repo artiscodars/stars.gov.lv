@@ -15,14 +15,19 @@
 
 <body class="font-sans">
     <div class="container mx-auto">
-        @include('includes.header', ['topMenu' => $topMenu])
 
-        @include('includes.breadcrumb')
+
+
+
+
+        @include('includes.header', ['menu' => $menu])
+
+        @include('includes.breadcrumb', ['menu' => $menu])
 
         <div class="flex">
-            <!-- Include Left Sidebar -->
-            @include('includes.left-menu', ['leftMenu' => $leftMenu])
-
+            @if (submenu())
+            @include('includes.left-menu', ['menu' => $menu])
+            @endif
 
 
             <!-- Main Content Area -->

@@ -1,5 +1,10 @@
+@if (submenu())
+
 <ul class="mt-8">
-    @foreach ($leftMenu as $item)
+
+
+
+    @foreach (submenu() as $item)
     @php
     // Check if the current route is either the top-level or a child of the current section
     $isActive = request()->is($item['route']) || request()->is($item['route'] . '/*');
@@ -46,3 +51,5 @@
     </li>
     @endforeach
 </ul>
+
+@endif

@@ -1,9 +1,9 @@
-@if (!empty($leftMenu) && !empty($topMenu))
 @php
-// Get current URL path
+$menu = loadMenu();
 $currentPath = request()->path();
 
-// Function to find breadcrumb trail in the menu structure
+// Define the function only if it doesn't already exist
+if (!function_exists('findBreadcrumbTrail')) {
 function findBreadcrumbTrail($menu, $currentPath, $trail = [])
 {
 foreach ($menu as $item) {
@@ -26,19 +26,18 @@ return $foundTrail;
 }
 return null;
 }
+}
 
-// Try to find breadcrumb trail in both left and top menus
-$breadcrumbTrail = findBreadcrumbTrail($leftMenu, $currentPath)
-?? findBreadcrumbTrail($topMenu, $currentPath);
+// Find breadcrumb trail in the menu
+$breadcrumbTrail = findBreadcrumbTrail($menu, $currentPath);
 @endphp
 
 @if ($breadcrumbTrail)
-<!-- Breadcrumb UI -->
 <nav aria-label="breadcrumb" class="pt-8 text-sm">
     <ol class="flex space-x-2">
         <li class="flex items-center gap-1">
-            <a href="{{ url('/') }}" class="text-gray-500"><svg width="17" height="13" viewBox="0 0 17 13" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+            <a href="{{ url('/') }}" class="text-gray-500">
+                <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.3695 5.31836V10.9035C13.3695 11.5363 12.8468 12.0591 12.214 12.0591H4.78543C4.15263 12.0591 3.62988 11.5363 3.62988 10.9035V5.31836"
                         stroke="#2D233D" stroke-width="1.5" stroke-miterlimit="10" />
@@ -61,5 +60,4 @@ $breadcrumbTrail = findBreadcrumbTrail($leftMenu, $currentPath)
         @endforeach
     </ol>
 </nav>
-@endif
 @endif
