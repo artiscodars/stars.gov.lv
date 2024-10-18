@@ -10,36 +10,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+
+
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-sans">
-    <div class="container mx-auto">
+<body>
 
+    @include('includes.header', ['menu' => $menu])
 
+    @include('includes.breadcrumb', ['menu' => $menu])
 
-
-
-        @include('includes.header', ['menu' => $menu])
-
-        @include('includes.breadcrumb', ['menu' => $menu])
-
-        <div class="flex">
-            @if (submenu())
-            @include('includes.left-menu', ['menu' => $menu])
-            @endif
-
-
-            <!-- Main Content Area -->
-            <div class="flex-1 p-6">
-                @yield('content')
+    @if (submenu())
+        <div class="container mx-auto">
+            <div class="flex">
+                @include('includes.left-menu', ['menu' => $menu])
+                <div class="flex-1">
+                    @yield('content')
+                </div>
             </div>
-        </div>
+    @else
+        @yield('content')
+    @endif
 
-        @include('includes.footer')
     </div>
+
+    @include('includes.footer')
+
 
     @vite('resources/js/app.js')
 </body>
+<script src="/js/custom.js"></script>
 
 </html>

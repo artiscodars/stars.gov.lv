@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container mx-auto py-6">
+<div class="container mx-auto py-6 px-6">
     <!-- Check the section passed via the route and display content accordingly -->
     @if($section == 'dashboard')
         <h1 class="text-4xl font-bold">Dashboard</h1>
