@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Par dizaina sistēmu",
+        "route": "par-dizaina-sistemu",
+        "children": []
+    },
+    {
+        "name": "Vispārīgi",
+        "route": "visparigi",
+        "children": []
+    },
+    {
+        "name": "Komponentes",
+        "route": "komponentes",
+        "submenu": true,
+        "children": [
+            {
+                "name": "Navigācijas elementi",
+                "route": "komponentes/navigacijas-elementi",
+                "children": [
+                    {
+                        "name": "Sānu izvēlne",
+                        "route": "komponentes/navigacijas-elementi/sanu-izvelne"
+                    },
+                    {
+                        "name": "Augšējā izvēlne",
+                        "route": "komponentes/navigacijas-elementi/augseja-izvelne"
+                    }
+                ]
+            },
+            {
+                "name": "Formu ievades elementi",
+                "route": "komponentes/formu-ievades-elementi",
+                "children": [
+                    {
+                        "name": "Radio pogas",
+                        "route": "komponentes/formu-ievades-elementi/radio-pogas"
+                    },
+                    {
+                        "name": "Izvēles saraksti",
+                        "route": "komponentes/formu-ievades-elementi/izveles-saraksti"
+                    },
+                    {
+                        "name": "Izvēles rūtiņas",
+                        "route": "komponentes/formu-ievades-elementi/izveles-rutinas"
+                    },
+                    {
+                        "name": "Ievades lauki",
+                        "route": "komponentes/formu-ievades-elementi/ievades-lauki"
+                    },
+                    {
+                        "name": "Paroles lauki",
+                        "route": "komponentes/formu-ievades-elementi/paroles-lauki"
+                    },
+                    {
+                        "name": "Teksta lauki",
+                        "route": "komponentes/formu-ievades-elementi/teksta-lauki"
+                    },
+                    {
+                        "name": "Izvēles lauki",
+                        "route": "komponentes/formu-ievades-elementi/izveles-lauki"
+                    },
+                    {
+                        "name": "Datuma lauki",
+                        "route": "komponentes/formu-ievades-elementi/datuma-lauki"
+                    },
+                    {
+                        "name": "Laika lauki",
+                        "route": "komponentes/formu-ievades-elementi/laika-lauki"
+                    },
+                    {
+                        "name": "Failu augšupielāde",
+                        "route": "komponentes/formu-ievades-elementi/failu-augsupielade"
+                    }
+                ]
+            },
+            {
+                "name": "Akordeoni",
+                "route": "komponentes/akordeoni"
+            },
+            {
+                "name": "Modālie logi",
+                "route": "komponentes/modalie-logi"
+            },
+            {
+                "name": "Birkas",
+                "route": "komponentes/birkas"
+            },
+            {
+                "name": "Attēli",
+                "route": "komponentes/atteli"
+            },
+            {
+                "name": "Datu ievades ieteikumi (tooltips)",
+                "route": "komponentes/datu-ievades-ieteikumi"
+            },
+            {
+                "name": "Galerijas",
+                "route": "komponentes/galerijas"
+            },
+            {
+                "name": "Info lodziņi",
+                "route": "komponentes/info-lodzini"
+            },
+            {
+                "name": "Paziņojumi",
+                "route": "komponentes/pazinojumi"
+            },
+            {
+                "name": "Pogas",
+                "route": "komponentes/pogas"
+            },
+            {
+                "name": "Privātuma paziņojums",
+                "route": "komponentes/privatuma-pazinojums"
+            },
+            {
+                "name": "Kartītes",
+                "route": "komponentes/kartites"
+            },
+            {
+                "name": "Īsceļu pogas",
+                "route": "komponentes/iscelu-pogas"
+            },
+            {
+                "name": "Citāti",
+                "route": "komponentes/citati"
+            },
+            {
+                "name": "Datņu saraksts",
+                "route": "komponentes/datnu-saraksts"
+            },
+            {
+                "name": "Koka skata navigācija",
+                "route": "komponentes/koka-skata-navigacija"
+            },
+            {
+                "name": "Lapu numerācija",
+                "route": "komponentes/lapu-numeracija"
+            },
+            {
+                "name": "Mapes",
+                "route": "komponentes/mapes"
+            },
+            {
+                "name": "Navigācijas ceļš",
+                "route": "komponentes/navigacijas-cels"
+            },
+            {
+                "name": "Padomu rīki",
+                "route": "komponentes/padomu-riki"
+            },
+            {
+                "name": "Progresa indikatori",
+                "route": "komponentes/progresa-indikatori"
+            }
+        ]
+    },
+    {
+        "name": "Piemēri",
+        "route": "piemeri",
+        "children": [
+            {
+                "name": "Publiskā sākuma lapa",
+                "route": "piemeri/publiska-sakuma-lapa"
+            },
+            {
+                "name": "Klienta sākuma lapa",
+                "route": "piemeri/klienta-sakuma-lapa"
+            }
+        ]
+    },
+    {
+        "name": "Kontakti",
+        "route": "kontakti",
+        "children": []
+    }
+]
