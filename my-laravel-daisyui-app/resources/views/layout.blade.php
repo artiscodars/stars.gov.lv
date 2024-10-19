@@ -18,25 +18,28 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="flex flex-col h-screen overflow-x-hidden">
 
     @include('includes.header', ['menu' => $menu])
 
     @include('includes.breadcrumb', ['menu' => $menu])
 
     @if (submenu())
-        <div class="container mx-auto">
+        <div class="container mx-auto flex-1 pb-8">
             <div class="flex">
                 @include('includes.left-menu', ['menu' => $menu])
                 <div class="flex-1">
                     @yield('content')
                 </div>
             </div>
+        </div>
     @else
-        @yield('content')
+        <div class="flex-1 pb-8">
+            @yield('content')
+        </div>
     @endif
 
-    </div>
+
 
     @include('includes.footer')
 

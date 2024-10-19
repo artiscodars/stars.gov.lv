@@ -13,12 +13,10 @@ module.exports = {
         extend: {
             colors: {
                 primary: '#2D233D',   // Primary color for buttons, links, etc.
-                secondary: '#9333EA', // Secondary color
-                accent: '#10B981',    // Accent color
-                neutral: '#3D4451',   // Neutral color (often used for text or borders)
-                'base-100': '#FFFFFF', // Base background color
-                info: '#3ABFF8',      // Info color
+                secondary: '#554570', // Secondary color
+                third: '#9680BD',    // Accent color
                 success: '#849A6F',   // Success color (like for success messages)
+                successDark: '#2E8062',
                 warning: '#EEB649',   // Warning color (like for warnings)
                 error: '#EB694',     // Error color (like for error messages)
                 light: '#F5F5F5',
