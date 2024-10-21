@@ -11,4 +11,6 @@
     @include('includes.jaunumi')
 </div>
 
+@include('includes.reviews')
+
 @endsection
