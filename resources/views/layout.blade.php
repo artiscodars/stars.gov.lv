@@ -25,18 +25,18 @@
     @include('includes.breadcrumb', ['menu' => $menu])
 
     @if (submenu())
-        <div class="container mx-auto flex-1 pb-8">
-            <div class="flex">
-                @include('includes.left-menu', ['menu' => $menu])
-                <div class="flex-1">
-                    @yield('content')
-                </div>
+    <div class="container mx-auto flex-1 pb-8">
+        <div class="flex">
+            @include('includes.left-menu', ['menu' => $menu])
+            <div class="flex-1">
+                @yield('content')
             </div>
         </div>
+    </div>
     @else
-        <div class="flex-1 pb-8">
-            @yield('content')
-        </div>
+    <div class="flex-1 pb-8">
+        @yield('content')
+    </div>
     @endif
 
 
@@ -46,6 +46,6 @@
 
     @vite('resources/js/app.js')
 </body>
-<script src="/js/custom.js"></script>
+
 
 </html>
