@@ -5,7 +5,7 @@
 </div>
 
 <!-- News Cards -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6 pb-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-8">
     <!-- Card 1 -->
     <div>
         <div class="bg-gray-300 h-96 mb-4 rounded-md"></div>
