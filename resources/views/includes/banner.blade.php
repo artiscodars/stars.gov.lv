@@ -1,4 +1,5 @@
 <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+
     <div class="content-center prose order-last md:order-first ">
         <h1 class="text-primary text-4xl md:text-6xl m-0 text">Projekta "STARS" dizaina sistēma</h1>
         <p class="text-primary opacity-80">Dizaina sistēmā apkopota visas dizaina komponentes, kas nepieciešamas
@@ -10,23 +11,23 @@
                 class="bg-starsGray block text-primary px-10 py-3  rounded-md no-underline  hover:opacity-80">Vispārīgi</a>
         </div>
     </div>
-    <div>
 
+    <div>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 767 647.8">
             <defs>
                 <style>
-                    .cls-1 {
-                        fill: #9680bd;
-                    }
+                .cls-1 {
+                    fill: #9680bd;
+                }
 
-                    .cls-2 {
-                        fill: #eeb649;
-                    }
+                .cls-2 {
+                    fill: #eeb649;
+                }
 
-                    .cls-3 {
-                        fill: #eb6945;
-                    }
+                .cls-3 {
+                    fill: #eb6945;
+                }
                 </style>
             </defs>
 
@@ -51,5 +52,5 @@
 
 
 
-        </ div>
     </div>
+</div>
