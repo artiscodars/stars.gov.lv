@@ -4,61 +4,66 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
 // Function to load both menus
-function loadMenu()
-{
-    // Load the structure.json file
-    $filePath = 'structure.json';
+if (!function_exists('loadMenu')) {
+    function loadMenu()
+    {
+        // Load the structure.json file
+        $filePath = 'structure.json';
 
-    if (Storage::exists($filePath)) {
-        $menu = json_decode(Storage::get($filePath), true);
+        if (Storage::exists($filePath)) {
+            $menu = json_decode(Storage::get($filePath), true);
 
-        // If the file could not be loaded or the JSON is invalid
-        if ($menu === null) {
-            abort(500, "Failed to load menu from structure.json");
+            // If the file could not be loaded or the JSON is invalid
+            if ($menu === null) {
+                abort(500, "Failed to load menu from structure.json");
+            }
+
+            return $menu;
+        } else {
+            abort(500, "Menu file not found.");
         }
-
-        return $menu;
-    } else {
-        abort(500, "Menu file not found.");
     }
 }
 
 // Function to recursively search the menu structure for submenu: true
-function findSubmenu($menu, $currentPath)
-{
-    foreach ($menu as $item) {
-        // Check if the current path matches the route or if the current path is within the route
-        if (Request::is($item['route']) || Request::is($item['route'] . '/*')) {
-            // If the item has a submenu, return the children as the submenu
-            if (isset($item['submenu']) && $item['submenu'] === true) {
-                return $item['children']; // Return the submenu (children)
+if (!function_exists('findSubmenu')) {
+    function findSubmenu($menu, $currentPath)
+    {
+        foreach ($menu as $item) {
+            // Check if the current path matches the route or if the current path is within the route
+            if (request()->is($item['route']) || request()->is($item['route'] . '/*')) {
+                // If the item has a submenu, return the children as the submenu
+                if (isset($item['submenu']) && $item['submenu'] === true) {
+                    return $item['children']; // Return the submenu (children)
+                }
             }
-        }
 
-        // If there are children, check recursively
-        if (!empty($item['children'])) {
-            $submenu = findSubmenu($item['children'], $currentPath);
-            if ($submenu) {
-                return $submenu; // Return the found submenu
+            // If there are children, check recursively
+            if (!empty($item['children'])) {
+                $submenu = findSubmenu($item['children'], $currentPath);
+                if ($submenu) {
+                    return $submenu; // Return the found submenu
+                }
             }
         }
+        return false;
     }
-    return false;
 }
 
 // Function to load the submenu related to the current path
-function submenu()
-{
-    // Load the structure.json file
-    $menu = loadMenu();
+if (!function_exists('submenu')) {
+    function submenu()
+    {
+        // Load the structure.json file
+        $menu = loadMenu();
 
-    // Get the current route path
-    $currentPath = Request::path();
+        // Get the current route path
+        $currentPath = request()->path();
 
-    // Call the recursive function to find the submenu related to the current path
-    return findSubmenu($menu, $currentPath);
+        // Call the recursive function to find the submenu related to the current path
+        return findSubmenu($menu, $currentPath);
+    }
 }
-
 
 // Home route that loads the home
 Route::get('/', function () {
