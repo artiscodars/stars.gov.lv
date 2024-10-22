@@ -171,6 +171,10 @@
             {
                 "name": "Jaunuma atvērums",
                 "route": "piemeri/jaunums"
+            },
+            {
+                "name": "Autorizācija",
+                "route": "piemeri/autorizacija"
             }
         ]
     },

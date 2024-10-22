@@ -48,9 +48,6 @@ module.exports = {
                             color: '#9680BD',
                             padding: 0,
                             borderLeft: '0',
-
-
-
                         },
                     },
                 },
