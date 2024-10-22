@@ -36,7 +36,7 @@
                         @foreach ($item['children'] as $child)
                             <li>
                                 <a href="{{ url($child['route']) }}"
-                                    class="flex relative items-center  py-1 text-sm font-medium text-secondary rounded-lg hover:text-gray-900 {{ request()->is($child['route']) ? '!text-gray-900 font-[600] pl-4' : '' }}">
+                                    class="flex relative items-center  py-1 text-sm font-medium text-secondary rounded-lg hover:text-third {{ request()->is($child['route']) ? '!text-gray-900 font-[600] pl-4' : '' }}">
 
                                     @if (request()->is($child['route']))
                                         <span class="block h-2 w-2 absolute left-0 bg-gray-900"></span>
