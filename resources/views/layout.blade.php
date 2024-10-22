@@ -25,21 +25,22 @@
     @include('includes.breadcrumb', ['menu' => $menu])
 
     @if (submenu())
-    <div class="container mx-auto flex-1">
-        <div class="flex">
-            @include('includes.left-menu', ['menu' => $menu])
-            <div class="flex-1">
-                @yield('content')
+        <div class="container mx-auto flex-1 pb-10">
+            <div class="flex">
+                @include('includes.left-menu', ['menu' => $menu])
+                <div class="flex-1">
+                    @yield('content')
+                </div>
             </div>
         </div>
-    </div>
     @else
-    <div class="flex-1 ">
-        @yield('content')
-    </div>
+        <div class="flex-1 ">
+            @yield('content')
+        </div>
     @endif
 
 
+    @include('includes.partners')
 
     @include('includes.footer')
 
