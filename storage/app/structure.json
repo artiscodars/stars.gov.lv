@@ -162,11 +162,15 @@
         "children": [
             {
                 "name": "Publiskā sākuma lapa",
-                "route": "piemeri/publiska-sakuma-lapa"
+                "route": "/"
             },
             {
                 "name": "Klienta sākuma lapa",
                 "route": "piemeri/klienta-sakuma-lapa"
+            },
+            {
+                "name": "Jaunuma atvērums",
+                "route": "piemeri/jaunums"
             }
         ]
     },

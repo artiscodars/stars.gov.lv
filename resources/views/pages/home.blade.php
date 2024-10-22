@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('breadcrumb', false)
+
 @section('content')
 <div class="bg-[#EBE7E0]">
     <div class="container mx-auto px-6">

@@ -22,7 +22,11 @@
 
     @include('includes.header', ['menu' => $menu])
 
-    @include('includes.breadcrumb', ['menu' => $menu])
+    @if (!View::hasSection('breadcrumb'))
+
+        @include('includes.breadcrumb', ['menu' => $menu])
+
+    @endif
 
     @if (submenu())
         <div class="container mx-auto flex-1 pb-10">

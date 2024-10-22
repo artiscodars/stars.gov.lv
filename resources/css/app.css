@@ -10,3 +10,10 @@ h5,
 h6 {
     @apply font-serif;
 }
+
+blockquote {
+    @apply font-serif;
+    @media (min-width: 768px) {
+        margin-left: -80px;
+    }
+}

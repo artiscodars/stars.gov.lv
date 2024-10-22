@@ -86,6 +86,8 @@ Route::get('/{section}/{subsection?}', function ($section, $subsection = null) {
         $viewName .= '_' . $subsection;
     }
 
+
+
     // Check if the view exists in the "pages" directory
     if (view()->exists($viewName)) {
         // Return the view with both menus

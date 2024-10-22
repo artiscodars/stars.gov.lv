@@ -1,3 +1,5 @@
+const { size } = require('lodash')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -35,6 +37,20 @@ module.exports = {
                             fontFamily: 'Source Serif 4, serif',
                             fontWeight: '500',
                             fontSize: '3.25rem',
+
+                        },
+                        maxWidth: 'none',
+                        blockquote: {
+                            fontWeight: '600',
+                            fontSize: '1.3rem',
+                            fontStyle: 'normal',
+                            fontFamily: 'Source Serif 4, serif',
+                            color: '#9680BD',
+                            padding: 0,
+                            borderLeft: '0',
+
+
+
                         },
                     },
                 },
