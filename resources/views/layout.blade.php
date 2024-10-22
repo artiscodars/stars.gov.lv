@@ -20,6 +20,7 @@
 
 <body class="flex flex-col h-screen overflow-x-hidden">
 
+
     @include('includes.header', ['menu' => $menu])
 
     @if (!View::hasSection('breadcrumb'))
@@ -38,7 +39,7 @@
             </div>
         </div>
     @else
-        <div class="flex-1 ">
+        <div class="flex-1 pb-10">
             @yield('content')
         </div>
     @endif

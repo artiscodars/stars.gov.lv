@@ -22,7 +22,8 @@
                             </svg>
                         </a>
                         <!-- Second-level dropdown -->
-                        <ul class="z-[999] absolute hidden group-hover:block bg-white shadow-lg rounded py-2 w-[250px]">
+                        <ul
+                            class="z-[999] absolute hidden group-hover:block bg-white shadow-lg rounded py-2 w-[250px] border border-gray-300">
                             @foreach($menuItem['children'] as $child)
                                 @php
                                     $hasSubChildren = !empty($child['children']);
@@ -42,7 +43,7 @@
                                     @if ($hasSubChildren)
                                         <!-- Third-level dropdown (hidden by default, shown on hover of the submenu-group) -->
                                         <ul
-                                            class="absolute left-full top-0 hidden group-hover/submenu:block  peer-hover:block peer group-hover/level:text-third bg-white shadow-lg rounded py-2 w-[200px]">
+                                            class="absolute left-full top-0 hidden group-hover/submenu:block  peer-hover:block peer group-hover/level:text-third bg-white shadow-lg rounded py-2 w-[200px] border border-gray-300">
                                             @foreach($child['children'] as $subChild)
                                                 <li>
                                                     <a href="{{ url($subChild['route']) }}"
@@ -71,7 +72,18 @@
         </svg>
     </button>
 
-    <!-- Login Button -->
-    <a href="#" class="py-3 px-5 bg-warning rounded">Pieslēgties</a>
+
+    @if (Str::contains(url()->current(), 'piemeri/klienta-sakuma-lapa'))
+
+        @include('includes.usermenu')
+    @else
+
+        <!-- Login Button -->
+        <a href="#" class="py-3 px-5 bg-warning rounded">Pieslēgties</a>
+
+    @endif
+
+
+
 
 </nav>

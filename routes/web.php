@@ -75,24 +75,54 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+
+// Function to find the title for the current path
+if (!function_exists('getTitleFromMenu')) {
+    function getTitleFromMenu($menu, $currentPath)
+    {
+        foreach ($menu as $item) {
+            // If the current item matches the path
+            if (request()->is($item['route']) || request()->is($item['route'] . '/*')) {
+                // If it's an exact match, return its name
+                if ($item['route'] === $currentPath) {
+                    return $item['name'];
+                }
+
+                // Recursively search in children
+                if (!empty($item['children'])) {
+                    $title = getTitleFromMenu($item['children'], $currentPath);
+                    if ($title) {
+                        return $title;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+}
+
 // Dynamic route for both section and subsection
-Route::get('/{section}/{subsection?}', function ($section, $subsection = null) {
+Route::get('/{path}', function ($path) {
     $menu = loadMenu();
 
-    // Determine the view name based on the section and subsection
-    $viewName = 'pages.' . $section;
-    if ($subsection) {
-        // If there is a subsection, append it to the view name with an underscore
-        $viewName .= '_' . $subsection;
-    }
+    // Break the path into segments
+    $segments = explode('/', $path);
 
+    // Construct the view name from the segments
+    $viewName = 'pages.' . implode('_', $segments);
 
+    // Get the current route path
+    $currentPath = request()->path();
+
+    // Get the title based on the current path
+    $pageTitle = getTitleFromMenu($menu, $currentPath);
 
     // Check if the view exists in the "pages" directory
     if (view()->exists($viewName)) {
-        // Return the view with both menus
+        // Return the view with both menus and the page title
         return view($viewName, [
             'menu' => $menu,
+            'pageTitle' => $pageTitle,
         ]);
     }
 
@@ -100,4 +130,4 @@ Route::get('/{section}/{subsection?}', function ($section, $subsection = null) {
     return response()->view('errors.404', [
         'menu' => $menu,
     ], 404);
-})->name('dynamic.page');
+})->where('path', '.*')->name('dynamic.page');
