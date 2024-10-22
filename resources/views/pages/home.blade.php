@@ -15,4 +15,6 @@
 
 @include('includes.reviews')
 
+@include('includes.partners')
+
 @endsection

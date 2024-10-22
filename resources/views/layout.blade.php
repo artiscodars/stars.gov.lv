@@ -39,13 +39,13 @@
             </div>
         </div>
     @else
-        <div class="flex-1 pb-10">
+        <div class="flex-1 pb-12">
             @yield('content')
         </div>
     @endif
 
 
-    @include('includes.partners')
+
 
     @include('includes.footer')
 
