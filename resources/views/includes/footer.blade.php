@@ -56,13 +56,20 @@
 
             <div class="flex flex-col gap-5 md:flex-row md:justify-between items-center pb-4  z-1 relative">
                 <div class="text-white flex gap-3 pb-20 md:pb-0 flex items-center">
-                    <a href="#" class=""><img src="/images/facebook.svg" class="h-6 invert" /></a>
-                    <a href="#" class=""><img src="/images/instagram.svg" class="h-6 invert" /></a>
-                    <a href="#" class=""><img src="/images/twitter-x.svg" class="h-5 invert" /></a>
-                    <a href="#" class=""><img src="/images/yt.svg" class="h-6 invert" /></a>
-                    <a href="#" class=""><img src="/images/linkedin.svg" class="h-6 invert" /></a>
-                    <a href="#" class=""><img src="/images/flickr.svg" class="h-6 invert" /></a>
-                    <a href="#" class=""><img src="/images/home.svg" class="h-5 invert" /></a>
+                    <a href="https://www.facebook.com/VIAA.LV" class="" target="_blank"><img src="/images/facebook.svg"
+                            class="h-6 invert" /></a>
+                    <a href="https://www.instagram.com/viaa_latvija/" class="" target="_blank"><img
+                            src="/images/instagram.svg" class="h-6 invert" /></a>
+                    <a href="https://twitter.com/VIAA_LV" class="" target="_blank"><img src="/images/twitter-x.svg"
+                            class="h-5 invert" /></a>
+                    <a href="https://www.youtube.com/user/VIAAlv" class="" target="_blank"><img src="/images/yt.svg"
+                            class="h-6 invert" /></a>
+                    <a href="https://www.linkedin.com/company/100035159" class="" target="_blank"><img
+                            src="/images/linkedin.svg" class="h-6 invert" /></a>
+                    <a href="https://www.flickr.com/photos/73458727@N06/albums/" class="" target="_blank"><img
+                            src="/images/flickr.svg" class="h-6 invert" /></a>
+                    <a href="https://www.viaa.gov.lv/lv" class="" target="_blank"><img src="/images/home.svg"
+                            class="h-5 invert" /></a>
 
                 </div>
                 <div class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline font-light pb-5 md:pb-0">
