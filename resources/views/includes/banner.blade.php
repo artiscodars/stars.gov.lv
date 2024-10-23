@@ -40,7 +40,7 @@
                     <rect class="cls-3" x="187.9" y="215.9" width="22.9" height="23.6" />
                     <image width="112" height="111" transform="scale(1 1)" xlink:href="{{ asset('images/b3.png') }}" />
                     <image width="344" height="343" transform="translate(231.5 31.4)"
-                        xlink:href="{{ asset('images/b2.png') }}" />
+                        xlink:href="{{ asset('images/b2.jpg') }}" />
                     <g>
                         <path class="cls-2" d="M73.1,604.1l-28.4-28.6,93-318.9h211.1l-.2,210.9-275.6,136.6Z" />
                         <rect class="cls-3" x="44.7" y="575.5" width="28.4" height="28.6" />
