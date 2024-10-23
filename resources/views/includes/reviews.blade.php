@@ -11,7 +11,7 @@
                 <!-- Slide 1 -->
                 <div class="w-full flex-shrink-0 p-8 flex items-center justify-center">
                     <div class="w-[600px] max-w-[90%] ">
-                        <h4 class="text-xl md:text-3xl font-semibold pb-4 text-primary">“Kopš mācību laika esmu
+                        <h4 class="text-xl md:text-3xl font-medium pb-4 text-primary">“Kopš mācību laika esmu
                             nomainījis dažādus
                             amatus, un
                             katru
@@ -32,7 +32,7 @@
                 <!-- Slide 2 -->
                 <div class="w-full flex-shrink-0 p-8 flex items-center justify-center">
                     <div class="w-[600px] max-w-[90%] ">
-                        <h4 class="text-xl md:text-3xl font-semibold pb-4 text-primary">“Kopš mācību laika esmu
+                        <h4 class="text-xl md:text-3xl font-medium pb-4 text-primary">“Kopš mācību laika esmu
                             nomainījis dažādus
                             amatus, un
                             katru
@@ -53,7 +53,7 @@
                 <!-- Slide 3 -->
                 <div class="w-full flex-shrink-0 p-8 flex items-center justify-center">
                     <div class="w-[600px] max-w-[90%] ">
-                        <h4 class="text-xl md:text-3xl font-semibold pb-4 text-primary">“Kopš mācību laika esmu
+                        <h4 class="text-xl md:text-3xl font-medium pb-4 text-primary">“Kopš mācību laika esmu
                             nomainījis dažādus
                             amatus, un
                             katru
@@ -74,7 +74,7 @@
                 <!-- Slide 4 -->
                 <div class="w-full flex-shrink-0 p-8 flex items-center justify-center">
                     <div class="w-[600px] max-w-[90%] ">
-                        <h4 class="text-xl md:text-3xl font-semibold pb-4 text-primary">“Kopš mācību laika esmu
+                        <h4 class="text-xl md:text-3xl font-medium pb-4 text-primary">“Kopš mācību laika esmu
                             nomainījis dažādus
                             amatus, un
                             katru
@@ -156,7 +156,6 @@ function moveToPrev() {
         carousel.style.transition = "transform 0.5s ease-in-out";
         carousel.style.transform = "translateX(0)";
         isAnimating = false;
-    }, 10
-);
+    }, 10);
 }
 </script>

@@ -6,7 +6,7 @@
     <img src="{{ asset('images/pieauguso_izglitiba.png') }}" alt="Vēl līdz 30. novembrim nodarbinātie var pieteikties kompensācijai par
         profesionālās kvalifikācijas iegūšanu" class="mb-10 block w-full rounded-md aspect-1">
 
-    <h1 class="text-xl md:text-4xl font-semibold pb-10">Vēl līdz 30. novembrim nodarbinātie var pieteikties
+    <h1 class="text-xl md:text-4xl font-medium pb-10">Vēl līdz 30. novembrim nodarbinātie var pieteikties
         kompensācijai
         par
         profesionālās kvalifikācijas iegūšanu</h1>

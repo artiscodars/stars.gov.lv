@@ -108,10 +108,10 @@
         // Toggle visibility
         if (submenu.classList.contains('hidden')) {
             submenu.classList.remove('hidden');
-            parentLink.classList.add('font-semibold'); // Add semibold when opened
+            parentLink.classList.add('font-medium'); // Add semibold when opened
         } else {
             submenu.classList.add('hidden');
-            parentLink.classList.remove('font-semibold'); // Remove semibold when closed
+            parentLink.classList.remove('font-medium'); // Remove semibold when closed
         }
     }
 

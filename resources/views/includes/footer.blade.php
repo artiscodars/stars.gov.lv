@@ -14,7 +14,7 @@
             <div class="pb-16 z-1 relative">
 
                 <div class="flex flex-col items-center text-center pt-12 pb-16 text-white">
-                    <h3 class="text-3xl font-semibold mb-6">Saņem iknedēļas <br>jaunumus e-pastā</h3>
+                    <h3 class="text-3xl font-medium mb-6">Saņem iknedēļas <br>jaunumus e-pastā</h3>
                     <form class="flex flex-row w-[450px] max-w-[100%]">
                         <input type="email" placeholder="Jūsu e-pasta adrese"
                             class="py-2 px-3 text-gray-800 flex-grow focus:outline-none">

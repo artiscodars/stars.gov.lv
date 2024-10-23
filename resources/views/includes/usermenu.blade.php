@@ -1,7 +1,7 @@
 <ul class="m-0 p-0">
     <li class="relative group ">
         <button
-            class="flex items-center justify-center w-10 h-10 bg-warning rounded-full font-semibold group-hover:outline outline-gray-400 outline-offset-2 group/level">
+            class="flex items-center justify-center w-10 h-10 bg-warning rounded-full font-medium group-hover:outline outline-gray-400 outline-offset-2 group/level">
             AB
         </button>
 
@@ -18,7 +18,7 @@
                     </svg>
 
                     <div>
-                        <p class="text-lg font-semibold">Andris Bērziņš</p>
+                        <p class="text-lg font-medium">Andris Bērziņš</p>
                     </div>
                 </div>
 

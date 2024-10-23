@@ -9,7 +9,7 @@
 
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
 
-            <h2 class="text-center text-3xl font-semibold leading-9 tracking-tight mb-6">Pieslēgties
+            <h2 class="text-center text-3xl font-medium leading-9 tracking-tight mb-6">Pieslēgties
                 platformai</h2>
         </div>
 
