@@ -54,13 +54,16 @@
 
 
 
-            <div class="flex flex-col gap-5 md:flex-row md:justify-between pb-4  z-1 relative">
-                <div class="text-white flex gap-3 pb-20 md:pb-0">
-                    <a href="#" class=""><img src="/images/linkedin.svg" class="w-6" /></a>
-                    <a href="#" class=""><img src="/images/facebook.svg" class="w-6" /></a>
-                    <a href="#" class=""><img src="/images/instagram.svg" class="w-6" /></a>
-                    <a href="#" class=""><img src="/images/tiktok.svg" class="w-6" /></a>
-                    <a href="#" class=""><img src="/images/twitter-x.svg" class="w-6" /></a>
+            <div class="flex flex-col gap-5 md:flex-row md:justify-between items-center pb-4  z-1 relative">
+                <div class="text-white flex gap-3 pb-20 md:pb-0 flex items-center">
+                    <a href="#" class=""><img src="/images/facebook.svg" class="h-6 invert" /></a>
+                    <a href="#" class=""><img src="/images/instagram.svg" class="h-6 invert" /></a>
+                    <a href="#" class=""><img src="/images/twitter-x.svg" class="h-5 invert" /></a>
+                    <a href="#" class=""><img src="/images/yt.svg" class="h-6 invert" /></a>
+                    <a href="#" class=""><img src="/images/linkedin.svg" class="h-6 invert" /></a>
+                    <a href="#" class=""><img src="/images/flickr.svg" class="h-6 invert" /></a>
+                    <a href="#" class=""><img src="/images/home.svg" class="h-5 invert" /></a>
+
                 </div>
                 <div class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline font-light pb-5 md:pb-0">
                     <a href="#" class="text-white">Privātuma politika</a>
