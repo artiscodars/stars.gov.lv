@@ -2,7 +2,8 @@
 
     <div class="content-center prose order-last md:order-first ">
         <h1 class="text-primary text-4xl md:text-6xl m-0 text">Projekta "STARS" dizaina sistēma</h1>
-        <p class="text-primary opacity-80">Dizaina sistēmā apkopota visas dizaina komponentes, kas nepieciešamas
+        <p class="text-primary opacity-80 w-full text-md">Dizaina sistēmā apkopota visas dizaina komponentes, kas
+            nepieciešamas
             projekta sistēmas izstrādei</p>
         <div class="flex gap-4">
             <a href="/komponentes"
@@ -12,7 +13,7 @@
         </div>
     </div>
 
-    <div>
+    <>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 767 647.8">
             <defs>
@@ -52,5 +53,5 @@
 
 
 
-    </div>
+    </ div>
 </div>
