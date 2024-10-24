@@ -14,8 +14,10 @@
         // Find "Navigācijas elementi" under "Komponentes"
         $navigacijasElementi = null;
         if ($komponentes && !empty($komponentes['children'])) {
-        $navigacijasElementi = collect($komponentes['children'])->firstWhere('route',
-        'komponentes/navigacijas-elementi');
+        $navigacijasElementi = collect($komponentes['children'])->firstWhere(
+        'route',
+        'komponentes/formu-ievades-elementi'
+        );
         }
         @endphp
 

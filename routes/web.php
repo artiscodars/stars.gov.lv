@@ -126,8 +126,12 @@ Route::get('/{path}', function ($path) {
         ]);
     }
 
+    // Generate the missing file name
+    $missingView = implode('_', $segments) . '.blade.php';
+
     // If the view doesn't exist, return a 404 error with the menus
     return response()->view('errors.404', [
         'menu' => $menu,
+        'missingView' => $missingView,
     ], 404);
 })->where('path', '.*')->name('dynamic.page');
