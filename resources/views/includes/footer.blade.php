@@ -64,7 +64,7 @@
 
         <div
             class="container mx-auto px-6 flex flex-col gap-5 md:flex-row md:justify-between items-center pb-4  z-1 relative">
-            <div class="text-white flex gap-3 pt-10 mb:pt-0 pb-10 md:pb-0  items-center">
+            <div class="text-white flex gap-3 pt-10 md:pt-1 pb-10 md:pb-0  items-center">
                 <a href="https://www.facebook.com/VIAA.LV" class="" target="_blank"><img src="/images/facebook.svg"
                         class="h-6 invert" /></a>
                 <a href="https://www.instagram.com/viaa_latvija/" class="" target="_blank"><img
@@ -82,7 +82,7 @@
 
             </div>
             <div
-                class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline  pb-5 md:pb-0 opacity-60 items-center text-sm">
+                class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline pt-1  pb-5 md:pb-0 opacity-60 items-center text-sm">
                 <a href="#" class="text-white">Lietošanas noteikumi</a>
                 <a href="#" class="text-white">Privātuma politika</a>
                 <a href="#" class="text-white">Biežāk uzdotie jautājumi</a>
