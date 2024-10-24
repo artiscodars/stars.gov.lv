@@ -9,7 +9,7 @@
         <div class="relative">
 
             <img src="/images/footer-stars.svg"
-                class="hidden md:block absolute bottom-0 -right-16 w-[50%] max-w-[100%] z-0" />
+                class="hidden md:block absolute bottom-0 -right-16 w-[53%] max-w-[100%] z-0" />
 
             <div class="pb-16 z-1 relative">
 
@@ -54,32 +54,39 @@
 
 
 
-            <div class="flex flex-col gap-5 md:flex-row md:justify-between items-center pb-4  z-1 relative">
-                <div class="text-white flex gap-3 pb-20 md:pb-0 flex items-center">
-                    <a href="https://www.facebook.com/VIAA.LV" class="" target="_blank"><img src="/images/facebook.svg"
-                            class="h-6 invert" /></a>
-                    <a href="https://www.instagram.com/viaa_latvija/" class="" target="_blank"><img
-                            src="/images/instagram.svg" class="h-6 invert" /></a>
-                    <a href="https://twitter.com/VIAA_LV" class="" target="_blank"><img src="/images/twitter-x.svg"
-                            class="h-5 invert" /></a>
-                    <a href="https://www.youtube.com/user/VIAAlv" class="" target="_blank"><img src="/images/yt.svg"
-                            class="h-6 invert" /></a>
-                    <a href="https://www.linkedin.com/company/100035159" class="" target="_blank"><img
-                            src="/images/linkedin.svg" class="h-6 invert" /></a>
-                    <a href="https://www.flickr.com/photos/73458727@N06/albums/" class="" target="_blank"><img
-                            src="/images/flickr.svg" class="h-6 invert" /></a>
-                    <a href="https://www.viaa.gov.lv/lv" class="" target="_blank"><img src="/images/home.svg"
-                            class="h-5 invert" /></a>
 
-                </div>
-                <div class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline font-light pb-5 md:pb-0">
-                    <a href="#" class="text-white">Privātuma politika</a>
-                    <a href="#" class="text-white">Kontakti</a>
-                    <a href="#" class="text-white">Kontakti</a>
-                </div>
-            </div>
 
         </div>
 
+    </div>
+
+    <div class="bg-primary pt-3">
+
+        <div
+            class="container mx-auto px-6 flex flex-col gap-5 md:flex-row md:justify-between items-center pb-4  z-1 relative">
+            <div class="text-white flex gap-3 pt-10 mb:pt-0 pb-10 md:pb-0  items-center">
+                <a href="https://www.facebook.com/VIAA.LV" class="" target="_blank"><img src="/images/facebook.svg"
+                        class="h-6 invert" /></a>
+                <a href="https://www.instagram.com/viaa_latvija/" class="" target="_blank"><img
+                        src="/images/instagram.svg" class="h-6 invert" /></a>
+                <a href="https://twitter.com/VIAA_LV" class="" target="_blank"><img src="/images/twitter-x.svg"
+                        class="h-5 invert" /></a>
+                <a href="https://www.youtube.com/user/VIAAlv" class="" target="_blank"><img src="/images/yt.svg"
+                        class="h-6 invert" /></a>
+                <a href="https://www.linkedin.com/company/100035159" class="" target="_blank"><img
+                        src="/images/linkedin.svg" class="h-6 invert" /></a>
+                <a href="https://www.flickr.com/photos/73458727@N06/albums/" class="" target="_blank"><img
+                        src="/images/flickr.svg" class="h-6 invert" /></a>
+                <a href="https://www.viaa.gov.lv/lv" class="" target="_blank"><img src="/images/home.svg"
+                        class="h-5 invert" /></a>
+
+            </div>
+            <div
+                class="flex flex-col md:flex-row gap-2 md:gap-5 uppercase underline  pb-5 md:pb-0 opacity-60 items-center text-sm">
+                <a href="#" class="text-white">Lietošanas noteikumi</a>
+                <a href="#" class="text-white">Privātuma politika</a>
+                <a href="#" class="text-white">Biežāk uzdotie jautājumi</a>
+            </div>
+        </div>
     </div>
 </footer>
