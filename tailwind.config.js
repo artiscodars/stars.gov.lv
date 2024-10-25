@@ -20,10 +20,12 @@ module.exports = {
                 success: '#849A6F',   // Success color (like for success messages)
                 successDark: '#2E8062',
                 warning: '#EEB649',   // Warning color (like for warnings)
-                error: '#EB694',     // Error color (like for error messages)
+                error: '#EB6945',     // Error color (like for error messages)
                 light: '#F5F5F5',
                 beige: '#EBE7E0',
                 starsGray: '#D6D6D6',
+                link: '#2596bd',
+                titleLink: '#083D4F',
             },
             fontFamily: {
                 sans: ['"Source Sans 3"', 'sans-serif'],  // Set Source Sans 3 as the default sans font
@@ -56,28 +58,30 @@ module.exports = {
                         h4: {
 
                             fontWeight: '500',
-                            fontSize: '1.875rem',
+                            fontSize: '1.4rem',
                         },
                         h5: {
 
                             fontWeight: '500',
-                            fontSize: '1.5rem',
+                            fontSize: '1.3rem',
                         },
                         maxWidth: '1536px',
                         blockquote: {
-                            fontWeight: '600',
+                            fontWeight: '500',
                             fontSize: '1.3rem',
                             fontStyle: 'normal',
-                            fontFamily: 'Source Serif 4, serif',
+                            fontFamily: '"Source Serif 4", serif',
                             color: '#9680BD',
                             padding: 0,
                             borderLeft: '0',
                         },
+                        p: {
+                            marginBottom: '1.5rem',
+                            marginTop: '0',
+                        },
                         a: {
-                            color: '#9680BD',
-                            '&:hover': {
-                                color: '#554570', // Change color on hover
-                            },
+                            color: '#2596bd',
+
                         },
                     },
                 },

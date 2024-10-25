@@ -14,7 +14,7 @@
 
 
 
-    @vite('resources/css/app.css')
+    @vite('resources/css/app.scss')
 </head>
 
 <body class="flex flex-col h-screen overflow-x-hidden">
