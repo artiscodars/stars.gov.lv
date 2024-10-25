@@ -7,7 +7,24 @@
     {
         "name": "Vispārīgi",
         "route": "visparigi",
-        "children": []
+        "children": [
+            {
+                "name": "Izkārtojums",
+                "route": "visparigi/izkartojums"
+            },
+            {
+                "name": "Krāsas",
+                "route": "visparigi/krasas"
+            },
+            {
+                "name": "Teksti",
+                "route": "visparigi/teksti"
+            },
+            {
+                "name": "Ikonas",
+                "route": "visparigi/ikonas"
+            }
+        ]
     },
     {
         "name": "Komponentes",

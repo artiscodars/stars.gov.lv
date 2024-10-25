@@ -5,11 +5,11 @@
         <div class="text-primary w-full text-md opacity-80 py-5">Dizaina sistēmā apkopota visas dizaina komponentes, kas
             nepieciešamas
             projekta sistēmas izstrādei</div>
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
             <a href="/komponentes"
-                class="bg-primary block text-white px-10 py-3  rounded-md no-underline hover:opacity-80">Komponentes</a>
+                class="bg-primary w-full md:w-auto block text-center text-white px-10 py-3  rounded-md no-underline hover:opacity-80">Komponentes</a>
             <a href="/visparigi"
-                class="bg-starsGray block text-primary px-10 py-3  rounded-md no-underline  hover:opacity-80">Vispārīgi</a>
+                class="bg-starsGray block w-full md:w-auto text-center text-primary px-10 py-3  rounded-md no-underline  hover:opacity-80">Vispārīgi</a>
         </div>
     </div>
 
@@ -18,17 +18,17 @@
             viewBox="0 0 767 647.8">
             <defs>
                 <style>
-                    .cls-1 {
-                        fill: #9680bd;
-                    }
+                .cls-1 {
+                    fill: #9680bd;
+                }
 
-                    .cls-2 {
-                        fill: #eeb649;
-                    }
+                .cls-2 {
+                    fill: #eeb649;
+                }
 
-                    .cls-3 {
-                        fill: #eb6945;
-                    }
+                .cls-3 {
+                    fill: #eb6945;
+                }
                 </style>
             </defs>
 

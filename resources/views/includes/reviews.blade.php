@@ -1,15 +1,20 @@
-<div class="relative w-full bg-warning py-8">
-    <div class="container mx-auto px-20 relative">
+<div class="relative w-full bg-warning pt-4 pb-12 md:pt-8 md:pb-8">
+    <div class="container mx-auto px-0 md:px-20 relative">
         <!-- Left Arrow -->
         <button
-            class="absolute left-8 top-1/2 transform -translate-y-1/2 bg-beige opacity-80 hover:opacity-100 text-red-600 rounded-md w-8 h-8 z-10"
+            class="absolute left-[50%] md:left-8 bottom-0 md:bottom-auto md:top-1/2 transform translate-y-[100%] -translate-x-[110%] md:translate-x-0 md:-translate-y-1/2 bg-beige opacity-80 hover:opacity-100 text-red-600 rounded-md w-8 h-8 z-10"
             onclick="moveToPrev()">❮</button>
+
+        <!-- Right Arrow -->
+        <button
+            class="absolute right-[50%] md:right-8 bottom-0 md:bottom-auto md:top-1/2 transform translate-y-[100%] translate-x-[110%] md:translate-x-0 md:-translate-y-1/2  bg-beige opacity-80 hover:opacity-100 text-red-600 rounded-md  w-8 h-8  z-10"
+            onclick="moveToNext()">❯</button>
 
         <!-- Carousel Container -->
         <div class="overflow-hidden">
             <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
                 <!-- Slide 1 -->
-                <div class="w-full flex-shrink-0 p-8 flex items-center justify-center">
+                <div class="w-full flex-shrink-0 p-4 md:p-8 flex items-center justify-center">
                     <div class="w-[600px] max-w-[90%] ">
                         <h4 class="text-xl md:text-3xl font-medium pb-4 text-primary">“Kopš mācību laika esmu
                             nomainījis dažādus
@@ -94,68 +99,65 @@
             </div>
         </div>
 
-        <!-- Right Arrow -->
-        <button
-            class="absolute right-8 top-1/2 transform -translate-y-1/2  bg-beige opacity-80 hover:opacity-100 text-red-600 rounded-md  w-8 h-8  z-10"
-            onclick="moveToNext()">❯</button>
+
     </div>
 </div>
 
 <script>
-const carousel = document.getElementById('carousel');
-const items = Array.from(carousel.children);
-let isAnimating = false;
+    const carousel = document.getElementById('carousel');
+    const items = Array.from(carousel.children);
+    let isAnimating = false;
 
-function updateOrder(direction) {
-    if (direction === 'next') {
-        // Move the first item to the end of the array
-        const firstItem = items.shift();
-        items.push(firstItem);
-    } else if (direction === 'prev') {
-        // Move the last item to the beginning of the array
-        const lastItem = items.pop();
-        items.unshift(lastItem);
+    function updateOrder(direction) {
+        if (direction === 'next') {
+            // Move the first item to the end of the array
+            const firstItem = items.shift();
+            items.push(firstItem);
+        } else if (direction === 'prev') {
+            // Move the last item to the beginning of the array
+            const lastItem = items.pop();
+            items.unshift(lastItem);
+        }
+
+        // Update the order dynamically
+        items.forEach((item, index) => {
+            item.style.order = index;
+        });
     }
 
-    // Update the order dynamically
-    items.forEach((item, index) => {
-        item.style.order = index;
-    });
-}
+    function moveToNext() {
+        if (isAnimating) return;
+        isAnimating = true;
 
-function moveToNext() {
-    if (isAnimating) return;
-    isAnimating = true;
-
-    // Slide to the next item
-    carousel.style.transition = "transform 0.5s ease-in-out";
-    carousel.style.transform = `translateX(-100%)`;
-
-    // Reorder after transition ends
-    carousel.addEventListener("transitionend", () => {
-        carousel.style.transition = "none";
-        carousel.style.transform = "translateX(0)";
-        updateOrder('next');
-        isAnimating = false;
-    }, {
-        once: true
-    });
-}
-
-function moveToPrev() {
-    if (isAnimating) return;
-    isAnimating = true;
-
-    // Reorder items first
-    updateOrder('prev');
-    carousel.style.transition = "none";
-    carousel.style.transform = "translateX(-100%)";
-
-    // Slide back into place
-    setTimeout(() => {
+        // Slide to the next item
         carousel.style.transition = "transform 0.5s ease-in-out";
-        carousel.style.transform = "translateX(0)";
-        isAnimating = false;
-    }, 10);
-}
+        carousel.style.transform = `translateX(-100%)`;
+
+        // Reorder after transition ends
+        carousel.addEventListener("transitionend", () => {
+            carousel.style.transition = "none";
+            carousel.style.transform = "translateX(0)";
+            updateOrder('next');
+            isAnimating = false;
+        }, {
+            once: true
+        });
+    }
+
+    function moveToPrev() {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        // Reorder items first
+        updateOrder('prev');
+        carousel.style.transition = "none";
+        carousel.style.transform = "translateX(-100%)";
+
+        // Slide back into place
+        setTimeout(() => {
+            carousel.style.transition = "transform 0.5s ease-in-out";
+            carousel.style.transform = "translateX(0)";
+            isAnimating = false;
+        }, 10);
+    }
 </script>

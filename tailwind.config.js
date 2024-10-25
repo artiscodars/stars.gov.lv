@@ -33,13 +33,37 @@ module.exports = {
             typography: {
                 DEFAULT: {
                     css: {
-                        h1: {
-                            fontFamily: 'Source Serif 4, serif',
-                            fontWeight: '500',
-                            fontSize: '3.25rem',
 
+                        h1: {
+
+                            fontWeight: '500',
+                            fontSize: '2.25rem',
+                            marginBottom: '1.5rem',
+                            marginTop: '1.5rem',
                         },
-                        maxWidth: 'none',
+                        h2: {
+                            marginBottom: '1rem',
+                            marginTop: '1.5rem',
+                            fontWeight: '500',
+                            fontSize: '2.0rem',
+                        },
+                        h3: {
+                            marginBottom: '0.8rem',
+                            marginTop: '0',
+                            fontWeight: '500',
+                            fontSize: '1.5rem',
+                        },
+                        h4: {
+
+                            fontWeight: '500',
+                            fontSize: '1.875rem',
+                        },
+                        h5: {
+
+                            fontWeight: '500',
+                            fontSize: '1.5rem',
+                        },
+                        maxWidth: '1536px',
                         blockquote: {
                             fontWeight: '600',
                             fontSize: '1.3rem',
@@ -48,6 +72,12 @@ module.exports = {
                             color: '#9680BD',
                             padding: 0,
                             borderLeft: '0',
+                        },
+                        a: {
+                            color: '#9680BD',
+                            '&:hover': {
+                                color: '#554570', // Change color on hover
+                            },
                         },
                     },
                 },

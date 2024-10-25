@@ -19,7 +19,10 @@
                         <input type="email" placeholder="Jūsu e-pasta adrese"
                             class="py-2 px-3 text-gray-800 flex-grow focus:outline-none">
                         <button type="submit"
-                            class="bg-primary text-white py-2 px-8  hover:bg-third transition">Pieteikties</button>
+                            class="bg-primary text-white py-2 px-4 md:px-8  hover:bg-third transition flex">
+                            <img src="/images/icon-check.svg"
+                                class="w-[20px] invert mr-0 md:mr-2 max-w-none md:hidden" />
+                            <span class="hidden md:block">Pieteikties</span></button>
                     </form>
                 </div>
 
