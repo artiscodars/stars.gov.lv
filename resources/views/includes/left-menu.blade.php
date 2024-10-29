@@ -1,6 +1,6 @@
 @if (submenu())
 
-    <ul class="list-none m-0 p-0 pr-[20px] border-r border-primary">
+    <ul class="list-none m-0 p-0 pr-[20px] border-r border-primary hidden lg:block">
 
 
 

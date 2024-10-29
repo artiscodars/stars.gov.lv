@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
 
 
@@ -124,8 +124,8 @@
                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                     <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive
                         components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.
-           
-         </p>
+
+                    </p>
                     <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
                             href="/docs/getting-started/introduction/"
                             class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start

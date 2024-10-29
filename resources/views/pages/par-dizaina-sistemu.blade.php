@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 prose">
+<div>
     <h1>{{ $pageTitle }}</h1>
 
     <p class="mb-4">

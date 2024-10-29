@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
 
 
@@ -13,7 +13,7 @@
 
 
 
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             @include('includes.card-programma', [
     'severity' => 'primary',
@@ -55,7 +55,7 @@
 
     <example class="not-prose">
 
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             @include('includes.card-iestade', [
     'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)',
     'stars' => 5,

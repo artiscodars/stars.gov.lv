@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
     <p>Izmantojiet šo piemēru kā vispārīgu veidlapas elementu, kas ietver vairākus ievades lauku veidus, piemēram,
         tekstu, e-pastu, paroli, numuru, URL un tālruņa numuru, un izmantojiet režģa izkārtojumu, lai pievienotu

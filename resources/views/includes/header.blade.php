@@ -1,8 +1,8 @@
 <div class="{{ Route::is('home') ? 'bg-[#EBE7E0]' : 'bg-white' }}">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto">
         <!-- Header Section -->
         <header class="py-2">
-            <div class=" hidden md:block">
+            <div class=" hidden lg:block">
                 <div class="flex justify-between items-center py-2">
                     <!-- Logo and Agency Name -->
                     <div class="flex items-center space-x-4">
@@ -37,14 +37,14 @@
                 <a href="/"><img src="{{ asset('images/stars-logo.svg') }}" alt="Stars" class="h-12"></a>
 
 
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     @include('includes.top-menu', ['menu' => $menu])
                 </div>
-                <div class="md:hidden">
+                <div class="lg:hidden">
                     @include('includes.top-menu-mobile', ['menu' => $menu])
                 </div>
 
-                <div class="md:hidden flex items-center gap-4">
+                <div class="lg:hidden flex items-center gap-4">
                     <!-- Search Button -->
                     <button class="btn btn-ghost btn-circle p-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -70,14 +70,14 @@
 
 
 <script>
-function toggleNavMenu() {
-    const navMenu = document.getElementById("navMenu");
-    if (navMenu.classList.contains("translate-x-[100%]")) {
-        navMenu.classList.remove("translate-x-[100%]");
-        navMenu.classList.add("translate-x-0");
-    } else {
-        navMenu.classList.remove("translate-x-0");
-        navMenu.classList.add("translate-x-[100%]");
+    function toggleNavMenu() {
+        const navMenu = document.getElementById("navMenu");
+        if (navMenu.classList.contains("translate-x-[100%]")) {
+            navMenu.classList.remove("translate-x-[100%]");
+            navMenu.classList.add("translate-x-0");
+        } else {
+            navMenu.classList.remove("translate-x-0");
+            navMenu.classList.add("translate-x-[100%]");
+        }
     }
-}
 </script>

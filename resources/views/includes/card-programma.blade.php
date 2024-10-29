@@ -1,6 +1,6 @@
 <div class="block   bg-{{ $severity }}  rounded-lg pt-2">
 
-    <div class="block max-w-sm p-6 bg-[#f5f5f5]  rounded-lg ">
+    <div class="block  p-6 bg-[#f5f5f5]  rounded-lg ">
 
         <h5 class="mb-2 text-lg font-medium tracking-tight text-primary dark:text-white leading-6">{{ $title }}</h5>
         <div class="py-3 flex gap-2">

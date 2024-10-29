@@ -29,18 +29,26 @@
     @endif
 
     @if (submenu())
-        <div class="container mx-auto flex-1 pb-10 prose">
-            <div class="flex">
+
+        <div class="container mx-auto flex-1 pb-12 prose">
+            <div class="flex gap-8">
                 @include('includes.left-menu', ['menu' => $menu])
                 <div class="flex-1">
                     @yield('content')
                 </div>
             </div>
         </div>
+
+    @elseif (View::hasSection('home'))
+
+        @yield('content')
+
     @else
-        <div class="flex-1 pb-12">
+
+        <div class="container mx-auto flex-1 pb-12 prose">
             @yield('content')
         </div>
+
     @endif
 
 

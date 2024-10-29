@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
 
     <h3>Piemērs</h3>
@@ -89,8 +89,7 @@
             bottom</button>
 
         <div id="tooltip-bottom" role="tooltip"
-           
- class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
             Tooltip on bottom
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>

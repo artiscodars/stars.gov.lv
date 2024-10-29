@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('breadcrumb', false)
+@section('home', true)
 
 @section('content')
 <div class="bg-[#EBE7E0]">

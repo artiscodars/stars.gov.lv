@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container mx-auto px-6 pb-10">
+<div>
 
 
 

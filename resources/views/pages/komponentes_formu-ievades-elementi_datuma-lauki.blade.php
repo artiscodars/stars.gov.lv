@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
 
     <h3>Piemērs</h3>
@@ -56,8 +56,7 @@
                 </div>
                 <input id="datepicker-range-end" name="end" type="text"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-           
-         placeholder="Select date end">
+                    placeholder="Select date end">
             </div>
         </div>
 

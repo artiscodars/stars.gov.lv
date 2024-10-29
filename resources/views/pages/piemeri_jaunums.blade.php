@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container mx-auto px-6 pb-10">
+<div>
 
     <img src="{{ asset('images/pieauguso_izglitiba.png') }}" alt="Vēl līdz 30. novembrim nodarbinātie var pieteikties kompensācijai par
         profesionālās kvalifikācijas iegūšanu" class="mb-10 block w-full rounded-md aspect-1">

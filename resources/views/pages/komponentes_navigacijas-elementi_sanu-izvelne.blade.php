@@ -2,7 +2,7 @@
 
 
 @section('content')
-<div class="container mx-auto px-6 pb-8 prose">
+<div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
     <p>
         Kreisās puses izvēlne (jeb sānu izvēlne) bieži tiek izmantota tīmekļa lietotnēs un vietnēs, lai nodrošinātu
