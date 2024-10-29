@@ -1,6 +1,6 @@
 @if (submenu())
 
-    <ul>
+    <ul class="list-none m-0 p-0 pr-[20px] border-r border-primary">
 
 
 
@@ -10,10 +10,10 @@
                 $isActive = request()->is($item['route']) || request()->is($item['route'] . '/*');
             @endphp
 
-            <li>
+            <li class="m-0 p-0 leading-1">
                 <!-- Top-level menu item -->
                 <a href="{{ url($item['route']) }}"
-                    class="flex relative items-center py-1 hover:text-gray-500 {{ $isActive ? 'font-[600] pl-4' : '' }}">
+                    class="flex relative items-center py-1 no-underline text-gray-700 hover:text-gray-500 {{ $isActive ? 'font-[600] pl-4' : '' }}">
 
                     @if ($isActive)
                         <span class="block h-2 w-2 absolute left-0 bg-gray-900"></span>
@@ -32,11 +32,11 @@
 
                 <!-- Submenu (children) -->
                 @if (!empty($item['children']))
-                    <ul class="pl-4 transition-all {{ $isActive ? 'block' : 'hidden' }}">
+                    <ul class="pl-4 m-0 transition-all list-none {{ $isActive ? 'block' : 'hidden' }}">
                         @foreach ($item['children'] as $child)
                             <li>
                                 <a href="{{ url($child['route']) }}"
-                                    class="flex relative items-center  py-1 text-sm font-medium text-secondary rounded-lg hover:text-third {{ request()->is($child['route']) ? '!text-gray-900 font-[600] pl-4' : '' }}">
+                                    class="flex relative items-center no-underline py-1 text-sm font-medium text-secondary rounded-lg hover:text-third {{ request()->is($child['route']) ? '!text-gray-900 font-[600] pl-4' : '' }}">
 
                                     @if (request()->is($child['route']))
                                         <span class="block h-2 w-2 absolute left-0 bg-gray-900"></span>

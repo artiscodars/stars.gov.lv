@@ -83,6 +83,7 @@ module.exports = {
                             color: '#2596bd',
 
                         },
+
                     },
                 },
             },
@@ -98,6 +99,7 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
+        require('flowbite/plugin'),
     ],
 }
 

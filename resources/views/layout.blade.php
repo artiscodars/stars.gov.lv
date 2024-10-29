@@ -12,9 +12,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}" />
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}" />
 
-
-
     @vite('resources/css/app.scss')
+
+
 </head>
 
 <body class="flex flex-col h-screen overflow-x-hidden">
@@ -24,23 +24,23 @@
 
     @if (!View::hasSection('breadcrumb'))
 
-    @include('includes.breadcrumb', ['menu' => $menu])
+        @include('includes.breadcrumb', ['menu' => $menu])
 
     @endif
 
     @if (submenu())
-    <div class="container mx-auto flex-1 pb-10">
-        <div class="flex">
-            @include('includes.left-menu', ['menu' => $menu])
-            <div class="flex-1">
-                @yield('content')
+        <div class="container mx-auto flex-1 pb-10 prose">
+            <div class="flex">
+                @include('includes.left-menu', ['menu' => $menu])
+                <div class="flex-1">
+                    @yield('content')
+                </div>
             </div>
         </div>
-    </div>
     @else
-    <div class="flex-1 pb-12">
-        @yield('content')
-    </div>
+        <div class="flex-1 pb-12">
+            @yield('content')
+        </div>
     @endif
 
 

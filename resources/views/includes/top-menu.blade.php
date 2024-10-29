@@ -1,5 +1,5 @@
 <!-- Navigation Links -->
-<nav class="flex gap-5 flex-row items-center flex-1 justify-end">
+<nav class="flex gap-5 flex-row items-center flex-1 justify-end ">
 
     @php
         $menu = loadMenu();
