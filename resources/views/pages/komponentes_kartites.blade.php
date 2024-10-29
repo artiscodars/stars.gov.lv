@@ -74,11 +74,7 @@
     'kosultants' => 'Anna kalniņa'
 ])
 
-            @include('includes.card-iestade', [
-    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)',
-    'stars' => 4,
-    'kosultants' => 'Anna kalniņa'
-])
+
 
         </div>
 
