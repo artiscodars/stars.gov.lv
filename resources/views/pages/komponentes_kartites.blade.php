@@ -80,6 +80,29 @@
 
     </example>
 
+    <h3>Testi</h3>
+
+
+    <example class="not-prose">
+        <div class="grid grid-cols-1 gap-4">
+            @include('includes.card-tests', [
+    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
+])
+
+            @include('includes.card-tests', [
+    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
+])
+
+            @include('includes.card-tests', [
+    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
+])
+
+            @include('includes.card-tests', [
+    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
+])
+        </div>
+    </example>
+
 </div>
 
 

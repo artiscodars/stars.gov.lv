@@ -1,4 +1,4 @@
-<div class="block max-w-sm  bg-{{ $severity }}  rounded-lg pt-2">
+<div class="block   bg-{{ $severity }}  rounded-lg pt-2">
 
     <div class="block max-w-sm p-6 bg-[#f5f5f5]  rounded-lg ">
 
