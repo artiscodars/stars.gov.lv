@@ -19,8 +19,9 @@
                 <div class="pb-4">
                     <label for="email">E-pasta adrese</label>
                     <div>
-                        <input id="email" name="email" type="email" autocomplete="email" required
-                            class="block w-full rounded-md border-0 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                        <input type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="john.doe@company.com" required />
                     </div>
                 </div>
 
@@ -32,14 +33,15 @@
                     </div>
                 </div>
                 <div class="pb-4">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required
-                        class="block w-full rounded-md border-0 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                    <input type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="•••••••••" required />
                 </div>
 
 
                 <div>
                     <button type="submit"
-                        class="flex justify-center rounded-md bg-warning px-10 py-2 text-md  leading-6 text-primary shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-warning">Aiziet</button>
+                        class="text-primary bg-warning hover:bg-opacity-80  focus:ring-4 focus:outline-none focus:ring-warning font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Aiziet</button>
                 </div>
 
             </form>
@@ -50,6 +52,8 @@
     </div>
 
 </div>
+
+
 
 
 @endsection

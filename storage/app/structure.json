@@ -70,14 +70,6 @@
                         "route": "komponentes/formu-ievades-elementi/paroles-lauki"
                     },
                     {
-                        "name": "Teksta lauki",
-                        "route": "komponentes/formu-ievades-elementi/teksta-lauki"
-                    },
-                    {
-                        "name": "Izvēles lauki",
-                        "route": "komponentes/formu-ievades-elementi/izveles-lauki"
-                    },
-                    {
                         "name": "Datuma lauki",
                         "route": "komponentes/formu-ievades-elementi/datuma-lauki"
                     },
