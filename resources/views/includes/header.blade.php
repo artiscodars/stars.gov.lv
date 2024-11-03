@@ -55,7 +55,7 @@
                     </button>
 
                     <!-- Toggle Navigation Button -->
-                    <button class="py-3 hover:opacity-80" onclick="toggleNavMenu()">
+                    <button class="py-3 hover:opacity-70" onclick="toggleNavMenu()">
                         <svg width="33" height="10" viewBox="0 0 33 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1L33 1" stroke="#22272E" />
 

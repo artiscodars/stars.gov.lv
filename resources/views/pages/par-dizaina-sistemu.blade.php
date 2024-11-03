@@ -27,7 +27,7 @@
         <div class="border border-gray-300 rounded-md">
             <div class="p-6">
                 <h3>Vispārīgās dizaina vadlīnijas</h3>
-                <a href="index-1.htm?s=d&amp;p=visparigi" class="flex items-center">
+                <a href="/visparigi" class="flex items-center">
                     Vairāk <i class="ri-arrow-right-line ml-2"></i>
                 </a>
             </div>
@@ -36,7 +36,7 @@
         <div class="border border-gray-300 rounded-md">
             <div class="p-6">
                 <h3>Komponentes</h3>
-                <a href="index-6.htm?s=d&amp;p=komponentes" class=" flex items-center">
+                <a href="/komponentes" class=" flex items-center">
                     Vairāk <i class="ri-arrow-right-line ml-2"></i>
                 </a>
             </div>
@@ -45,7 +45,7 @@
         <div class="border border-gray-300 rounded-md">
             <div class="p-6">
                 <h3>Piemēri</h3>
-                <a href="index-23.htm?s=d&amp;p=piemeri" class=" flex items-center">
+                <a href="/piemeri" class=" flex items-center">
                     Vairāk <i class="ri-arrow-right-line ml-2"></i>
                 </a>
             </div>

@@ -10,7 +10,7 @@
         <div class=" flex-1 font-normal text-[#8A8A8A] text-md">Datnes apraksts</div>
         <div class="flex justify-content-start w-full lg:w-auto">
             <button type="button"
-                class="text-white bg-primary hover:opacity-80 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Lejupielādēt</button>
+                class="text-white bg-primary hover:opacity-70 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Lejupielādēt</button>
         </div>
 
     </div>

@@ -16,8 +16,8 @@
 
         <div class="flex justify-between items-center pt-4">
             <button type="button"
-                class="text-white bg-primary hover:opacity-80 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Pieteikties</button>
-            <a href="#" class="text-gray-500 hover:opacity-80 underline font-medium rounded-md text-sm ">Uzzināt
+                class="text-white bg-primary hover:opacity-70 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Pieteikties</button>
+            <a href="#" class="text-gray-500 hover:opacity-70 underline font-medium rounded-md text-sm ">Uzzināt
                 vairāk</a>
         </div>
     </div>

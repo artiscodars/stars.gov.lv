@@ -1,23 +1,36 @@
 @extends('layout')
 
-
 @section('content')
 <div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+
+    <p>Izvēles saraksti ir lietotāja interfeisa elementi, kas ļauj lietotājiem izvēlēties vienu vai vairākas opcijas no
+        iepriekš definēta saraksta. Tie ir īpaši noderīgi, lai saglabātu vietu saskarnē un vienkāršotu sarežģītu izvēļu
+        procesu.</p>
+
+    <h3>Pielietojuma gadījumi</h3>
+    <ul>
+        <li><strong>Formu aizpildīšana:</strong> Izvēles saraksti ļauj lietotājiem ātri un vienkārši izvēlēties no
+            iepriekš definētiem variantiem, piemēram, valsts, pilsētas vai produkta kategorijas.</li>
+        <li><strong>Filtru un iestatījumu pārvaldība:</strong> Izvēles saraksti var tikt izmantoti, lai piedāvātu
+            dažādus filtrus vai konfigurācijas iestatījumus, kas palīdz lietotājiem pielāgot saturu vai funkcionalitāti.
+        </li>
+        <li><strong>Kompleksas izvēles vienkāršošana:</strong> Lielos datu kopumos izvēles saraksti palīdz sakārtot un
+            samazināt izvēles iespēju daudzumu, padarot izvēles procesu lietotājam vieglāk saprotamu.</li>
+    </ul>
 
     <h3>Piemērs</h3>
     <example class="not-prose">
 
         <form class="max-w-sm mx-auto">
-            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an
-                option</label>
+            <label for="countries" class="block mb-2 text-sm font-medium text-primary">Izvēlieties opciju</label>
             <select id="countries"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="bg-white border border-gray-500 text-primary text-sm rounded-lg focus:ring-primary focus:border-third block w-full p-2.5">
+                <option selected>Izvēlieties valsti</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+                <option value="DE">Vācija</option>
             </select>
         </form>
 
@@ -28,15 +41,15 @@
     <example class="not-prose">
 
         <form class="max-w-sm mx-auto">
-            <label for="countries_multiple" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
-                an option</label>
+            <label for="countries_multiple" class="block mb-2 text-sm font-medium text-primary">Izvēlieties
+                opciju</label>
             <select multiple id="countries_multiple"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose countries</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="bg-white border border-gray-500 text-primary text-sm rounded-lg focus:ring-primary focus:border-third block w-full p-2.5">
+                <option selected>Izvēlieties valstis</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+                <option value="DE">Vācija</option>
             </select>
         </form>
 
@@ -47,15 +60,15 @@
     <example class="not-prose">
 
         <form class="max-w-sm mx-auto">
-            <label for="countries_disabled" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
-                an option</label>
+            <label for="countries_disabled" class="block mb-2 text-sm font-medium text-primary">Izvēlieties
+                opciju</label>
             <select disabled id="countries_disabled"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="bg-white border border-gray-500 text-primary text-sm rounded-lg focus:ring-primary focus:border-third block w-full p-2.5">
+                <option selected>Izvēlieties valsti</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+                <option value="DE">Vācija</option>
             </select>
         </form>
 
@@ -66,42 +79,36 @@
     <example class="not-prose">
 
         <form class="max-w-sm mx-auto">
-            <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Small select</label>
+            <label for="small" class="block mb-2 text-sm font-medium text-primary">Mazs izvēles lauks</label>
             <select id="small"
-                class="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="block w-full p-2 mb-6 text-sm text-primary border border-gray-500 rounded-lg bg-white focus:ring-primary focus:border-third">
+                <option selected>Izvēlieties valsti</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+                <option value="DE">Vācija</option>
             </select>
-            <label for="default" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
-                select</label>
+            <label for="default" class="block mb-2 text-sm font-medium text-primary">Noklusējuma izvēles lauks</label>
             <select id="default"
-                class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="bg-white border border-gray-500 text-primary mb-6 text-sm rounded-lg focus:ring-primary focus:border-third block w-full p-2.5">
+                <option selected>Izvēlieties valsti</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+                <option value="DE">Vācija</option>
             </select>
-            <label for="large" class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Large
-                select</label>
+            <label for="large" class="block mb-2 text-base font-medium text-primary">Liels izvēles lauks</label>
             <select id="large"
-                class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Choose a country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                class="block w-full px-4 py-3 text-base text-primary border border-gray-500 rounded-lg bg-white focus:ring-primary focus:border-third">
+                <option selected>Izvēlieties valsti</option>
+                <option value="US">Amerikas Savienotās Valstis</option>
+                <option value="CA">Kanāda</option>
+                <option value="FR">Francija</option>
+
+                <option value="DE">Vācija</option>
             </select>
         </form>
 
     </example>
-
-
-
-
-
 </div>
 @endsection

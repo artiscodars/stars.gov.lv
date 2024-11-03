@@ -18,10 +18,10 @@
             </p>
             <div class="flex flex-col md:flex-row gap-2">
                 <button
-                    class="bg-warning w-full min-w-[200px] hover:opacity-80 px-4 py-2  rounded-lg mb-2 md:mb-0 font-medium">
+                    class="bg-warning w-full min-w-[200px] hover:opacity-70 px-4 py-2  rounded-lg mb-2 md:mb-0 font-medium">
                     Piekrītu
                 </button>
-                <button class="bg-primary w-full min-w-[200px] hover:opacity-80 px-4 py-2  text-white rounded-lg">
+                <button class="bg-primary w-full min-w-[200px] hover:opacity-70 px-4 py-2  text-white rounded-lg">
                     Noraidu
                 </button>
             </div>

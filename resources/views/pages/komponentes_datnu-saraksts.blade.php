@@ -4,6 +4,24 @@
 @section('content')
 <div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+
+    <p>Datņu saraksta templeits ļauj lietotājiem ērti pārlūkot un piekļūt dažādiem dokumentiem strukturētā un viegli
+        pārskatāmā formātā. Šis templeits ietver gan tabulu, gan kartītes, kas nodrošina elastīgu un pielāgojamu veidu,
+        kā parādīt informāciju par dokumentiem.</p>
+
+    <h3>Pielietojuma gadījumi</h3>
+    <ul>
+        <li><strong>Dokumentu uzskaitījums tabulā:</strong> Tabulas formāts ir ideāli piemērots, lai organizētu un
+            sakārtotu dokumentus pēc datuma, tipa vai citiem kritērijiem. Tas nodrošina lietotājiem skaidru un ātru
+            pārskatu par pieejamajiem failiem.</li>
+        <li><strong>Dokumentu kartītes:</strong> Kartītes piedāvā alternatīvu veidu, kā parādīt dokumentu informāciju,
+            nodrošinot vizuāli pievilcīgu un kompaktu izkārtojumu. Tās ir noderīgas, ja vēlaties sniegt
+            papildinformāciju vai izcelt konkrētus dokumentus.</li>
+        <li><strong>Pielāgojams izkārtojums:</strong> Datņu saraksta templeits ļauj viegli pielāgot un paplašināt datu
+            parādīšanu atbilstoši lietotāja vajadzībām, piemēram, pievienojot jaunus dokumentus vai mainot to
+            izkārtojumu.</li>
+    </ul>
+
     <h2>Tabula</h2>
 
     <example class="not-prose">
@@ -65,7 +83,7 @@
 
 
 
-        </div>
+            </d iv>
     </example>
 
 

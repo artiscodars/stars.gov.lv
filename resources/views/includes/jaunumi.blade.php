@@ -7,7 +7,7 @@
 <!-- News Cards -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-20">
     <!-- Card 1 -->
-    <a href="/piemeri/jaunums" class="hover:opacity-80 no-underline">
+    <a href="/piemeri/jaunums" class="hover:opacity-70 no-underline">
         <div class="bg-gray-300 h-96 mb-4 rounded-md"></div>
         <p class="text-sm text-orange-600 mb-2">02.10.2023</p>
         <h3 class="text-lg text-titleLink">
@@ -18,7 +18,7 @@
     </a>
 
     <!-- Card 2 -->
-    <a href="/piemeri/jaunums" class="hover:opacity-80 no-underline">
+    <a href="/piemeri/jaunums" class="hover:opacity-70 no-underline">
         <div class="bg-gray-300 h-96 mb-4 rounded-md"></div>
         <p class="text-sm text-orange-600 mb-2">02.10.2023</p>
         <h3 class="text-lg text-titleLink">
@@ -29,7 +29,7 @@
     </a>
 
     <!-- Card 3 -->
-    <a href="/piemeri/jaunums" class="hover:opacity-80 no-underline">
+    <a href="/piemeri/jaunums" class="hover:opacity-70 no-underline">
         <div class="bg-gray-300 h-96 mb-4 rounded-md"></div>
         <p class="text-sm text-orange-600 mb-2">02.10.2023</p>
         <h3 class="text-lg text-titleLink">
@@ -39,7 +39,7 @@
         </h3>
     </a>
 
-    <a href="/piemeri/jaunums" class="hover:opacity-80 no-underline">
+    <a href="/piemeri/jaunums" class="hover:opacity-70 no-underline">
         <div class="bg-gray-300 h-96 mb-4 rounded-md"></div>
         <p class="text-sm text-orange-600 mb-2">02.10.2023</p>
         <h3 class="text-lg text-titleLink">
