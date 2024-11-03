@@ -10,23 +10,24 @@
 
             // Find the "Komponentes" section
             $komponentes = collect($menu)->firstWhere('route', 'komponentes');
+
+            // Sort components by name if they exist
+            $components = !empty($komponentes['children'])
+                ? collect($komponentes['children'])->sortBy('name')
+                : collect([]);
         @endphp
 
-        @if ($komponentes && !empty($komponentes['children']))
-            @foreach ($komponentes['children'] as $component)
+        @if ($components->isNotEmpty())
+            @foreach ($components as $component)
                 @php
                     $subcomponentCount = !empty($component['children']) ? count($component['children']) : 0;
                 @endphp
                 <a href="{{ url($component['route']) }}"
-                    class="bg-white hover:bg-gray-200 rounded-lg p-4  transition-shadow duration-200 border border-gray-300">
-
-
+                    class="bg-white hover:bg-gray-200 rounded-lg p-4 transition-shadow duration-200 border border-gray-300">
                     {{ $component['name'] }}
                     @if($subcomponentCount > 0)
                         <span class="text-third text-sm">({{ $subcomponentCount }})</span>
                     @endif
-
-
                 </a>
             @endforeach
         @else

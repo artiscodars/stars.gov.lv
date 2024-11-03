@@ -1,10 +1,15 @@
 @if (submenu())
 
+    @php
+        // Sort the submenu by the 'name' field
+        $submenuItems = submenu();
+        usort($submenuItems, function ($a, $b) {
+            return strcmp($a['name'], $b['name']);
+        });
+    @endphp
+
     <ul class="list-none m-0 p-0 pr-[20px] border-r border-primary hidden lg:block">
-
-
-
-        @foreach (submenu() as $item)
+        @foreach ($submenuItems as $item)
             @php
                 // Check if the current route is either the top-level or a child of the current section
                 $isActive = request()->is($item['route']) || request()->is($item['route'] . '/*');

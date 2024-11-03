@@ -11,25 +11,26 @@
             // Find the "Komponentes" section
             $komponentes = collect($menu)->firstWhere('route', 'komponentes');
 
-            // Find "Navigācijas elementi" under "Komponentes"
-            $navigacijasElementi = null;
+            // Find "Formu ievades elementi" under "Komponentes"
+            $formuIevadesElementi = null;
             if ($komponentes && !empty($komponentes['children'])) {
-                $navigacijasElementi = collect($komponentes['children'])->firstWhere(
+                $formuIevadesElementi = collect($komponentes['children'])->firstWhere(
                     'route',
                     'komponentes/formu-ievades-elementi'
                 );
             }
+
+            // Sort subcomponents by name
+            $sortedSubcomponents = $formuIevadesElementi && !empty($formuIevadesElementi['children'])
+                ? collect($formuIevadesElementi['children'])->sortBy('name')
+                : collect([]);
         @endphp
 
-        @if ($navigacijasElementi && !empty($navigacijasElementi['children']))
-            @foreach ($navigacijasElementi['children'] as $subcomponent)
+        @if ($sortedSubcomponents->isNotEmpty())
+            @foreach ($sortedSubcomponents as $subcomponent)
                 <a href="{{ url($subcomponent['route']) }}"
-                    class="bg-white hover:bg-gray-200 rounded-lg p-4  transition-shadow duration-200 border border-gray-300">
-
-
+                    class="bg-white hover:bg-gray-200 rounded-lg p-4 transition-shadow duration-200 border border-gray-300">
                     {{ $subcomponent['name'] }}
-
-
                 </a>
             @endforeach
         @else

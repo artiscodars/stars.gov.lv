@@ -19,17 +19,18 @@
                     'komponentes/navigacijas-elementi'
                 );
             }
+
+            // Sort subcomponents by name
+            $sortedSubcomponents = $navigacijasElementi && !empty($navigacijasElementi['children'])
+                ? collect($navigacijasElementi['children'])->sortBy('name')
+                : collect([]);
         @endphp
 
-        @if ($navigacijasElementi && !empty($navigacijasElementi['children']))
-            @foreach ($navigacijasElementi['children'] as $subcomponent)
+        @if ($sortedSubcomponents->isNotEmpty())
+            @foreach ($sortedSubcomponents as $subcomponent)
                 <a href="{{ url($subcomponent['route']) }}"
-                    class="bg-white hover:bg-gray-200 rounded-lg p-4  transition-shadow duration-200 border border-gray-300">
-
-
+                    class="bg-white hover:bg-gray-200 rounded-lg p-4 transition-shadow duration-200 border border-gray-300">
                     {{ $subcomponent['name'] }}
-
-
                 </a>
             @endforeach
         @else

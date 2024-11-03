@@ -4,7 +4,7 @@
 @section('content')
 <div>
     <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
-    <h2>Tabula</h2>
+
 
     <example class="not-prose">
         <div class="overflow-x-auto">
@@ -43,31 +43,6 @@
         </div>
 
     </example>
-
-    <h2>Kartītes</h2>
-
-
-    <example class="not-prose">
-
-        <div class=" grid grid-cols-1 gap-4">
-            @include('includes.card-file', [
-    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
-])
-
-            @include('includes.card-file', [
-    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
-])
-
-
-            @include('includes.card-file', [
-    'title' => 'Latvijas valsts mācību centrs "Studijas centrs" (tālmācības programma)'
-])
-
-
-
-        </div>
-    </example>
-
 
 
 
