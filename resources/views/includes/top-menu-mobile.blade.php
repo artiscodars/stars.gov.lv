@@ -33,95 +33,112 @@
 
     <!-- Menu Items -->
     @php
-        $menu = loadMenu();
+    $menu = loadMenu();
     @endphp
 
     @if ($menu)
-        <div class="flex flex-col flex-1 gap-5 w-full px-6 overflow-y-auto py-6">
-            @foreach($menu as $menuItem)
-                @php
-                    $isActive = request()->is($menuItem['route']) || request()->is($menuItem['route'] . '/*');
-                @endphp
+    <div class="flex flex-col flex-1 gap-5 w-full px-6 overflow-y-auto py-6">
+        @foreach($menu as $menuItem)
+        @php
+        $isActive = request()->is($menuItem['route']) || request()->is($menuItem['route'] . '/*');
+        @endphp
+        @if (!empty($menuItem['children']))
+        <!-- Dropdown with children -->
+        <div class="relative">
+            <a href="{{ url($menuItem['route']) }}" class="flex items-center {{ $isActive ? 'font-[600]' : '' }}"
+                <?php if (!empty($menuItem['children'])) { ?>
+                onclick="toggleSubmenu(event, 'submenu-{{ $loop->index }}')" <?php } ?>>
+                <span>{{ $menuItem['name'] }}</span>
                 @if (!empty($menuItem['children']))
-                    <!-- Dropdown with children -->
-                    <div class="relative">
-                        <a href="{{ url($menuItem['route']) }}" class="flex items-center {{ $isActive ? 'font-[600]' : '' }}"
-                            onclick="toggleSubmenu(event, 'submenu-{{ $loop->index }}')">
-                            <span>{{ $menuItem['name'] }}</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </a>
-                        <ul id="submenu-{{ $loop->index }}" class="hidden bg-white rounded py-2">
-                            @foreach($menuItem['children'] as $child)
-                                <li>
-                                    <a href="{{ url($child['route']) }}" class="block px-4 py-2 text-sm flex items-center "
-                                        onclick="toggleSubmenu(event, 'submenu-{{ $loop->index }}-{{ $loop->parent->index }}')">
-                                        {{ $child['name'] }}
-                                        <!-- Check for third level -->
-                                        @if (!empty($child['children']))
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                                            </svg>
-                                        @endif
-                                    </a>
-                                    <!-- Third Level Submenu -->
-                                    @if (!empty($child['children']))
-                                        <ul id="submenu-{{ $loop->index }}-{{ $loop->parent->index }}"
-                                            class="hidden bg-white rounded py-2 ml-4">
-                                            @foreach($child['children'] as $subChild)
-                                                <li>
-                                                    <a href="{{ url($subChild['route']) }}"
-                                                        class="block px-4 py-2 text-sm">{{ $subChild['name'] }}</a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    @endif
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @else
-                    <!-- Regular menu item -->
-                    <a href="{{ url($menuItem['route']) }}" class="{{ $isActive ? 'font-[600]' : '' }}">{{ $menuItem['name'] }}</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
                 @endif
-            @endforeach
+            </a>
+            <ul id="submenu-{{ $loop->index }}" class="hidden bg-white rounded py-2">
+                @foreach($menuItem['children'] as $child)
+                <li>
+                    <a href="{{ url($child['route']) }}" class="block px-4 py-2 text-sm flex items-center "
+                        <?php if (!empty($child['children'])) { ?>
+                        onclick="toggleSubmenu(event, 'submenu-{{ $loop->index }}-{{ $loop->parent->index }}')"
+                        <?php } ?>>
+                        {{ $child['name'] }}
+                        <!-- Check for third level -->
+                        @if (!empty($child['children']))
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        @endif
+                    </a>
+                    <!-- Third Level Submenu -->
+                    @if (!empty($child['children']))
+                    <ul id="submenu-{{ $loop->index }}-{{ $loop->parent->index }}"
+                        class="hidden bg-white rounded py-2 ml-4">
+                        @foreach($child['children'] as $subChild)
+                        <li>
+                            <a href="{{ url($subChild['route']) }}"
+                                class="block px-4 py-2 text-sm">{{ $subChild['name'] }}</a>
+                        </li>
+                        @endforeach
+                    </ul>
+                    @endif
+                </li>
+                @endforeach
+            </ul>
         </div>
+        @else
+        <!-- Regular menu item -->
+        <a href="{{ url($menuItem['route']) }}" class="{{ $isActive ? 'font-[600]' : '' }}">{{ $menuItem['name'] }}</a>
+        @endif
+        @endforeach
+    </div>
     @endif
+
+
+    @if (Str::contains(url()->current(), 'piemeri/klienta-sakuma-lapa'))
+    <div class="sticky bottom-0 z-[999] p-4 bg-white border-t border-slate-200 w-full  ">
+        @include('includes.usermenu-mobile')
+    </div>
+    @else
 
     <!-- Login Button -->
     <div class="sticky bottom-0 z-[999] p-4 bg-white border-t border-slate-200 w-full flex justify-center">
         <a href="#" class="py-3 px-5 bg-warning rounded">Pieslēgties</a>
     </div>
+
+    @endif
+
+    <!-- Login Button -->
+
 </nav>
 
 <!-- JavaScript -->
 <script>
-    // Function to toggle the submenu on click
-    function toggleSubmenu(event, submenuId) {
-        event.preventDefault(); // Prevent the default action (navigation)
-        const submenu = document.getElementById(submenuId);
-        const parentLink = event.currentTarget;
+// Function to toggle the submenu on click
+function toggleSubmenu(event, submenuId) {
+    event.preventDefault(); // Prevent the default action (navigation)
+    const submenu = document.getElementById(submenuId);
+    const parentLink = event.currentTarget;
 
-        // Toggle visibility
-        if (submenu.classList.contains('hidden')) {
-            submenu.classList.remove('hidden');
-            parentLink.classList.add('font-medium'); // Add semibold when opened
-        } else {
-            submenu.classList.add('hidden');
-            parentLink.classList.remove('font-medium'); // Remove semibold when closed
-        }
+    // Toggle visibility
+    if (submenu.classList.contains('hidden')) {
+        submenu.classList.remove('hidden');
+        parentLink.classList.add('font-medium'); // Add semibold when opened
+    } else {
+        submenu.classList.add('hidden');
+        parentLink.classList.remove('font-medium'); // Remove semibold when closed
     }
+}
 
-    // Function to close the navigation menu
-    function toggleNavMenu() {
-        const navMenu = document.getElementById('navMenu');
-        if (navMenu.style.transform === 'translateX(0%)') {
-            navMenu.style.transform = 'translateX(100%)';
-        } else {
-            navMenu.style.transform = 'translateX(0%)';
-        }
+// Function to close the navigation menu
+function toggleNavMenu() {
+    const navMenu = document.getElementById('navMenu');
+    if (navMenu.style.transform === 'translateX(0%)') {
+        navMenu.style.transform = 'translateX(100%)';
+    } else {
+        navMenu.style.transform = 'translateX(0%)';
     }
+}
 </script>
