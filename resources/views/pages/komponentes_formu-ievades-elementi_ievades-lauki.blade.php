@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Ievades lauki ir lietotāja interfeisa elementi, kas ļauj lietotājiem ievadīt un iesniegt datus, piemēram, tekstu,
         skaitļus, e-pasta adreses un paroles. Tie ir būtiski, lai lietotāji varētu mijiedarboties ar sistēmu, ievadot
         nepieciešamo informāciju.</p>

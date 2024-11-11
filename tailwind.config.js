@@ -83,6 +83,12 @@ module.exports = {
                             color: '#2596bd',
 
                         },
+                        table: {
+                            width: '100%',
+                            borderCollapse: 'collapse',
+                            marginTop: 0,
+
+                        },
 
                     },
                 },

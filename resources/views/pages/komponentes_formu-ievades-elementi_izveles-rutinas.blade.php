@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Izvēles rūtiņas ir lietotāja interfeisa elementi, kas ļauj lietotājiem izvēlēties vienu vai vairākas opcijas no
         pieejamajiem variantiem. Atšķirībā no radio pogām, izvēles rūtiņas ļauj atzīmēt vairākas opcijas vienlaicīgi.

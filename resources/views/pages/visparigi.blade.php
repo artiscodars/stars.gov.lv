@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Dizaina sistēmas vispārīgā daļa apraksta interneta sistēmas vēlamo izkārtojumu, izmantojamās krāsas, burtu
         veidolus un izmērus, kā arī piedāvā ikonu bibliotāku.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

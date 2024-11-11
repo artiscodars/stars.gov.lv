@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Progresa indikatori ir lietotāja interfeisa elementi, kas vizuāli attēlo uzdevuma izpildes progresu. Tie palīdz
         lietotājiem saprast, cik tālu viņi ir konkrētā procesā un cik daudz ir atlicis līdz tā pabeigšanai, tādējādi

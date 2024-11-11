@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Radio pogas ir lietotāja interfeisa elementi, kas ļauj lietotājiem izvēlēties vienu opciju no vairākiem
         iespējamiem variantiem. Atšķirībā no izvēles rūtiņām (checkbox), radio pogas nodrošina ekskluzīvu izvēli, kur

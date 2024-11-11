@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Paroles lauki ir specializēti ievades lauki, kas ļauj lietotājiem ievadīt paroles vai citas sensitīvas
         informācijas daļas. Paroles laukos ievadītie simboli parasti tiek aizstāti ar punktiem vai zvaigznītēm, lai

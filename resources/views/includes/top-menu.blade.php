@@ -43,7 +43,7 @@
                                     @if ($hasSubChildren)
                                         <!-- Third-level dropdown (hidden by default, shown on hover of the submenu-group) -->
                                         <ul
-                                            class="absolute left-full top-0 hidden group-hover/submenu:block  peer-hover:block peer group-hover/level:text-third bg-white shadow-lg rounded py-2 w-[200px] border border-gray-300">
+                                            class="absolute right-full top-0 hidden group-hover/submenu:block  peer-hover:block peer group-hover/level:text-third bg-white shadow-lg rounded py-2 w-[200px] border border-gray-300">
                                             @foreach($child['children'] as $subChild)
                                                 <li>
                                                     <a href="{{ url($subChild['route']) }}"
@@ -73,7 +73,7 @@
     </button>
 
 
-    @if (Str::contains(url()->current(), 'piemeri/klienta-sakuma-lapa'))
+    @if (Str::contains(url()->current(), 'piemeri/mans-konts'))
 
         @include('includes.usermenu')
     @else

@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Koka skata navigācija ir lietotāja interfeisa elements, kas vizuāli attēlo hierarhisku struktūru, ļaujot
         lietotājiem ātri pārlūkot un piekļūt informācijai. Šis skats tiek izmantots, lai parādītu saistītos elementus ar

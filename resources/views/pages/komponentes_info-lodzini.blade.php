@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Uznirstošie informācijas lodziņi ir mazi, konteksta jutīgi elementi, kas parādās, kad lietotājs veic noteiktu
         darbību, piemēram, uzved kursoru virs elementa vai noklikšķina uz tā. Tie nodrošina papildinformāciju vai

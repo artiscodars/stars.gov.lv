@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Lapu numerācija ir lietotāja interfeisa elements, kas tiek izmantots, lai organizētu un pārlūkot daudzlappušu
         saturu, sadalot to mazākās, viegli pārvaldāmās daļās. Tas ļauj lietotājiem ātri pārvietoties starp dažādām

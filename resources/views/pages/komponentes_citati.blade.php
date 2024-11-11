@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Citāti ir teksta fragmenti, kas tiek izmantoti, lai izceltu svarīgas idejas vai atkārtotu citu personu
         izteikumus. Tie piešķir saturam autoritāti, dziļumu un kontekstu, padarot tekstu daudzveidīgāku un
         informatīvāku.</p>

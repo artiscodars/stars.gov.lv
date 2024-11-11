@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
 
     <p>Foto galerija ir lietotāja interfeisa elements, kas ļauj organizēt un parādīt attēlus strukturētā un vizuāli
@@ -27,12 +27,13 @@
 
     <example class="not-prose">
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            @for ($i = 0; $i < 12; $i++) <div>
-                <img class="h-auto max-w-full rounded-lg" src="/images/7.avif" alt="Galerijas attēls">
+            @for ($i = 0; $i < 12; $i++)
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/images/7.avif" alt="Galerijas attēls">
+                </div>
+            @endfor
         </div>
-        @endfor
-</div>
-</example>
+    </example>
 
 
 

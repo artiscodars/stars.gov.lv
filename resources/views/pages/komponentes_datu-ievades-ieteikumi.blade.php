@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Datu ievades ieteikumi, pazīstami arī kā tooltips, ir nelieli informācijas burbuļi, kas parādās, kad lietotājs
         uzved kursoru virs noteiktas saskarnes daļas. Tie nodrošina papildu informāciju vai paskaidrojumus,
@@ -108,8 +108,8 @@
 
         <div id="tooltip-left" role="tooltip"
             class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-600 rounded-lg shadow-sm opacity-0 tooltip">
-           
- Padoms kreisajā pusē
+
+            Padoms kreisajā pusē
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
     </example>

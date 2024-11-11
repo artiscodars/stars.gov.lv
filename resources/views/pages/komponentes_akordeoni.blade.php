@@ -2,9 +2,8 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
-    <h2>Akordeoni</h2>
     <p>Akordeoni ir interaktīvi lietotāja interfeisa elementi, kas ļauj lietotājiem atvērt un aizvērt sadaļas, lai
         parādītu vai paslēptu saturu. Tie ir noderīgi, lai samazinātu informācijas pārslodzi un uzlabotu lapas lasāmību.
     </p>

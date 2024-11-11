@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Ikonas ir būtisks lietotāja interfeisa dizaina elements, kas palīdz uzlabot lietotāja pieredzi, piedāvājot
         vizuālus norādījumus un samazinot tekstuālās informācijas apjomu. Tās var izmantot, lai pievērstu uzmanību,
         ilustrētu funkcionalitāti vai vienkārši pievienotu estētisku vērtību lietotnei vai tīmekļa vietnei.</p>

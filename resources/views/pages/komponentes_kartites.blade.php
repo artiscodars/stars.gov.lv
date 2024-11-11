@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Satura kartītes ir noderīgas, lai organizētu un parādītu informāciju par strukturētā un vizuāli pievilcīgā veidā.
         Tās palīdz lietotājiem ātri iegūt svarīgāko informāciju, piemēram, par piedāvātajām programmām, piemēram,

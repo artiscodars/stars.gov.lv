@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Datuma lauki ir specializēti ievades lauki, kas ļauj lietotājiem ievadīt vai izvēlēties konkrētu datumu. Tie
         nodrošina vienotu un ērtu datuma ievadi, izmantojot kalendāra logrīkus vai manuālu datuma ievadīšanu.</p>

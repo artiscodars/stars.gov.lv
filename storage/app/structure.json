@@ -178,8 +178,71 @@
                 "route": "/"
             },
             {
-                "name": "Klienta sākuma lapa",
-                "route": "piemeri/klienta-sakuma-lapa"
+                "name": "Lietotāja darba vieta ",
+                "route": "piemeri/mans-konts",
+                "submenu": true,
+                "children": [
+                    {
+                        "name": "Mans konts",
+                        "route": "piemeri/mans-konts/mans-konts",
+                        "children": []
+                    },
+                    {
+                        "name": "Mācību vēsture",
+                        "route": "piemeri/mans-konts/macibu-vesture",
+                        "children": []
+                    },
+                    {
+                        "name": "Mani izglītības dokumenti",
+                        "route": "piemeri/mans-konts/mani-izglitibas-dokumenti",
+                        "children": []
+                    },
+                    {
+                        "name": "Mani testi",
+                        "route": "piemeri/mans-konts/mani-testi",
+                        "children": []
+                    },
+                    {
+                        "name": "Karjeras konsultācijas",
+                        "route": "piemeri/mans-konts/karjeras-konsultacijas",
+                        "children": []
+                    },
+                    {
+                        "name": "Mans mācību ceļš",
+                        "route": "piemeri/mans-konts/mans-macibu-cels",
+                        "children": []
+                    },
+                    {
+                        "name": "Programmu katalogs",
+                        "route": "piemeri/mans-konts/programmu-katalogs",
+                        "children": []
+                    },
+                    {
+                        "name": "Saziņa",
+                        "route": "piemeri/mans-konts/sazina",
+                        "children": []
+                    },
+                    {
+                        "name": "Vērtējumi",
+                        "route": "piemeri/mans-konts/vertejumi",
+                        "children": []
+                    },
+                    {
+                        "name": "Anketas",
+                        "route": "piemeri/mans-konts/anketas",
+                        "children": []
+                    },
+                    {
+                        "name": "Atbalsta pasākumi",
+                        "route": "piemeri/mans-konts/atbalsta-pasakumi",
+                        "children": []
+                    },
+                    {
+                        "name": "Mana nodarbinātība",
+                        "route": "piemeri/mans-konts/mana-nodarbinatiba",
+                        "children": []
+                    }
+                ]
             },
             {
                 "name": "Jaunuma atvērums",
@@ -188,6 +251,38 @@
             {
                 "name": "Autorizācija",
                 "route": "piemeri/autorizacija"
+            },
+            {
+                "name": "Jaunumi",
+                "route": "piemeri/jaunumi"
+            },
+            {
+                "name": "Izglītības programmas",
+                "route": "piemeri/izglitibas-programmas"
+            },
+            {
+                "name": "Izglītības programma",
+                "route": "piemeri/izglitibas-programma"
+            },
+            {
+                "name": "Izglītības iestādes",
+                "route": "piemeri/izglitibas-iestades"
+            },
+            {
+                "name": "Izglītības iestāde",
+                "route": "piemeri/izglitibas-iestade"
+            },
+            {
+                "name": "Izglītības iestādes pieteikums",
+                "route": "piemeri/izglitibas-iestades-pieteikums"
+            },
+            {
+                "name": "Testi",
+                "route": "piemeri/testi"
+            },
+            {
+                "name": "Tests",
+                "route": "piemeri/tests"
             }
         ]
     },

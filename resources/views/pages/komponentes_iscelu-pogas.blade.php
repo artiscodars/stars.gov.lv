@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Īsceļu poga ir domāta, lai apvienotu zem vienas izvēlenes vairākas darbības vai vienu. Šī poga ir novietojama
         ekrānu apakšējā labajā sturī. Īsceļu pogas ikona var tik mainīta pēc nepieciešamības, lai precīzāk atspoguļotu
         veicamo darbību.

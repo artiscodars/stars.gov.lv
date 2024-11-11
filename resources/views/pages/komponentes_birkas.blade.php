@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Birkas ir lietotāja interfeisa elementi, kas palīdz organizēt un kategorizēt saturu. Tās bieži tiek izmantotas,
         lai ātri un efektīvi marķētu saistītus objektus, piemēram, rakstus, produktus vai projektus.</p>

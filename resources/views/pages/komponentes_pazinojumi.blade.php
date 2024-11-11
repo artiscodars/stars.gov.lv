@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Paziņojumi ir lietotāja interfeisa elementi, kas tiek izmantoti, lai sniegtu lietotājiem svarīgu informāciju,
         brīdinājumus vai atsauksmes par viņu darbībām. Tie palīdz uzturēt lietotājus informētus par notiekošo sistēmā

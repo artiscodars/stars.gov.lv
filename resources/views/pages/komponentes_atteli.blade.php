@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
     <p>Attēli ir būtisks vizuālās komunikācijas elements, kas palīdz labāk izprast un uztvert informāciju. Tie var
         uzlabot lietotāja pieredzi, pievienot estētisku vērtību un skaidri ilustrēt noteiktus punktus vai idejas.</p>
 

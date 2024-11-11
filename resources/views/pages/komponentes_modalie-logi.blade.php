@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Modālie logi ir lietotāja interfeisa elementi, kas tiek parādīti virs galvenā satura, aptumšojot pārējo lapas
         daļu, lai piesaistītu lietotāja uzmanību konkrētam ziņojumam vai darbībai. Tie bieži tiek izmantoti, lai sniegtu

@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Izvēles saraksti ir lietotāja interfeisa elementi, kas ļauj lietotājiem izvēlēties vienu vai vairākas opcijas no
         iepriekš definēta saraksta. Tie ir īpaši noderīgi, lai saglabātu vietu saskarnē un vienkāršotu sarežģītu izvēļu

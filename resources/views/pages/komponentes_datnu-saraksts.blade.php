@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Datņu saraksta templeits ļauj lietotājiem ērti pārlūkot un piekļūt dažādiem dokumentiem strukturētā un viegli
         pārskatāmā formātā. Šis templeits ietver gan tabulu, gan kartītes, kas nodrošina elastīgu un pielāgojamu veidu,

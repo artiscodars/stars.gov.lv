@@ -3,7 +3,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Navigācijas ceļš, jeb "breadcrumbs," ir lietotāja interfeisa elements, kas parāda lietotāja atrašanās vietu
         tīmekļa vietnes vai lietotnes hierarhijā. Tas sniedz vizuālu norādi par lietotāja pašreizējo pozīciju un ļauj

@@ -2,7 +2,7 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4">{{ $pageTitle }}</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">{{ $pageTitle }}</h1>
 
     <p>Laika lauki ir specializēti ievades lauki, kas ļauj lietotājiem ievadīt vai izvēlēties konkrētu laiku. Tie
         nodrošina vienkāršu un precīzu laika ievadi, izmantojot manuālu ievadi vai grafisko interfeisu ar laika izvēlni.
