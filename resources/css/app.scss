@@ -104,11 +104,21 @@ example {
 }
 
 @media (max-width: 768px) {
-    table {
-        tr,
-        td,
-        th {
+    table.responsive {
+        > thead {
+            display: none;
+            th {
+                display: none;
+            }
+        }
+        > tbody {
             display: block;
+            > tr {
+                display: block;
+                > td {
+                    display: block;
+                }
+            }
         }
     }
 }

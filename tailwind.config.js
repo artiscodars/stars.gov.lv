@@ -80,7 +80,7 @@ module.exports = {
                             marginTop: '0',
                         },
                         a: {
-                            color: '#2596bd',
+                            color: '#2D233D',
 
                         },
                         table: {

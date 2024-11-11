@@ -11,7 +11,7 @@
     <h2 class="uppercase pb-4 border-b border-primary font-sans text-xl font-normal">Darījumu vēsture</h2>
 
     <div class="overflow-x-auto">
-        <table class="min-w-full border-collapse border-spacing-0">
+        <table class="min-w-full border-collapse border-spacing-0 responsive">
 
             <tbody>
                 <tr>
