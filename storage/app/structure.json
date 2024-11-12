@@ -231,16 +231,6 @@
                         "name": "Anketas",
                         "route": "piemeri/mans-konts/anketas",
                         "children": []
-                    },
-                    {
-                        "name": "Atbalsta pasākumi",
-                        "route": "piemeri/mans-konts/atbalsta-pasakumi",
-                        "children": []
-                    },
-                    {
-                        "name": "Mana nodarbinātība",
-                        "route": "piemeri/mans-konts/mana-nodarbinatiba",
-                        "children": []
                     }
                 ]
             },
