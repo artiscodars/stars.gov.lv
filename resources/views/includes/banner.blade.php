@@ -1,7 +1,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 py-8">
 
     <div class="content-center prose order-last md:order-first ">
-        <h1 class="text-primary text-4xl md:text-6xl m-0 text">Projekta "STARS" dizaina sistēma</h1>
+        <h1 class="text-primary text-2xl sm:text-4xl lg:text-6xl m-0 text">Projekta "STARS" dizaina sistēma</h1>
         <div class="text-primary w-full text-md opacity-80 py-5">Dizaina sistēmā apkopota visas dizaina komponentes, kas
             nepieciešamas
             projekta sistēmas izstrādei</div>
