@@ -14,15 +14,16 @@
             </button>
         </div>
 
+
         <!-- Secondary Section with Language and Font Options -->
         <div class="flex flex-row items-center justify-between py-4 px-6">
             <img src="{{ asset('images/stars-logo.svg') }}" alt="Valsts izglītības attīstības aģentūra" class="h-8">
             <div class="flex gap-6 items-end">
-                <div class="flex gap-2 items-end">
+               <?php /*  <div class="flex gap-2 items-end">
                     <a href="#" class="text-md leading-none">A</a>
                     <a href="#" class="text-lg leading-none">A</a>
                     <a href="#" class="text-xl leading-none">A</a>
-                </div>
+                </div>*/?>
                 <div class="flex gap-2 text-lg items-end leading-none">
                     <a href="#" class="font-bold">LV</a>
                     <a href="#" class="">EN</a>
