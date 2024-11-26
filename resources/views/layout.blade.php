@@ -60,6 +60,6 @@
     @vite('resources/js/app.js')
 </body>
 
-
+<script src="{{ asset('js/accessibility.js') }}"></script>
 
 </html>
