@@ -93,3 +93,22 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+setTimeout(() => {
+    let aioa_script_tag = document.createElement("script");
+    aioa_script_tag.src = "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=#554570&token=null&position=bottom_right";
+    aioa_script_tag.id = "aioa-adawidget";
+    aioa_script_tag.defer = "true";
+    document.getElementsByTagName("body")[0].appendChild(aioa_script_tag);
+
+    // Assuming the widget has a method or API to set the language
+    aioa_script_tag.onload = () => {
+        if (window.aioaAccessibilityWidget) {
+            window.aioaAccessibilityWidget.setLanguage('lv'); // 'lv' for Latvian
+        }
+    };
+}, 3000);
+</script>
+

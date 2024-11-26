@@ -14,12 +14,7 @@
 
                     <!-- Language and Accessibility Options -->
                     <div class="flex space-x-6 items-end">
-                        <!-- Accessibility Options -->
-                        <div class="flex gap-2 items-end ">
-                            <a href=" #" class="text-md  leading-none">A</a>
-                            <a href="#" class="text-lg  leading-none">A</a>
-                            <a href="#" class="text-xl  leading-none">A</a>
-                        </div>
+
                         <!-- Language Switch -->
                         <div class="flex gap-2 text-lg items-end leading-none">
                             <a href="#" class="font-bold ">LV</a>
