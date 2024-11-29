@@ -68,6 +68,49 @@
     </example>
 
 
+    <example class="not-prose">
+
+
+
+
+        <div class="grid grid-cols-1 gap-4">
+
+            @include('includes.card-programma-list', [
+    'severity' => 'primary',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+
+            @include('includes.card-programma-list', [
+    'severity' => 'secondary',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+
+            @include('includes.card-programma-list', [
+    'severity' => 'third',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+
+            @include('includes.card-programma-list', [
+    'severity' => 'success',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+            @include('includes.card-programma-list', [
+    'severity' => 'success-dark',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+            @include('includes.card-programma-list', [
+    'severity' => 'warning',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+
+            @include('includes.card-programma-list', [
+    'severity' => 'error',
+    'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
+])
+        </div>
+    </example>
+
+
     <h3>Iestādes</h3>
 
     <example class="not-prose">

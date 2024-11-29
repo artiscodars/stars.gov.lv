@@ -83,37 +83,37 @@
         }
     </script>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 gap-4">
 
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'primary',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'secondary',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'third',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'success',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'success-dark',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'warning',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
-        @include('includes.card-programma', [
+        @include('includes.card-programma-list', [
     'severity' => 'error',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
