@@ -86,35 +86,43 @@
     <div class="grid grid-cols-1 gap-4">
 
         @include('includes.card-programma-list', [
+    'veids' => 'Attālināti',
     'severity' => 'primary',
+
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
         @include('includes.card-programma-list', [
     'severity' => 'secondary',
+    'veids' => 'Attālināti',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
         @include('includes.card-programma-list', [
     'severity' => 'third',
+    'veids' => 'Klātienē',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
         @include('includes.card-programma-list', [
     'severity' => 'success',
+    'veids' => 'Attālināti',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
         @include('includes.card-programma-list', [
     'severity' => 'success-dark',
+    'veids' => 'Klātienē',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
         @include('includes.card-programma-list', [
     'severity' => 'warning',
+    'veids' => 'Attālināti',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
 
         @include('includes.card-programma-list', [
     'severity' => 'error',
+    'veids' => 'Attālināti',
     'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
 ])
     </div>
