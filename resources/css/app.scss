@@ -103,26 +103,6 @@ example {
     background-color: #d6d6d6;
 }
 
-@media (max-width: 768px) {
-    table.responsive {
-        > thead {
-            display: none;
-            th {
-                display: none;
-            }
-        }
-        > tbody {
-            display: block;
-            > tr {
-                display: block;
-                > td {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
 //accessibility
 
 .asw-menu-btn {
@@ -168,5 +148,41 @@ example {
         min-width: 20px;
         max-width: 20px;
         max-height: 20px;
+    }
+}
+
+//responsive table with labels
+
+table.responsive {
+    @media (max-width: 768px) {
+        thead {
+            display: none;
+        }
+        tbody {
+            display: block;
+        }
+        tr {
+            display: block;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        td {
+            display: block;
+            text-align: left;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: calc(30% + 5px);
+            position: relative;
+            &:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                margin-right: 10px;
+                width: 30%;
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
     }
 }
