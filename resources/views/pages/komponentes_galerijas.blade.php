@@ -26,13 +26,7 @@
 
 
     <example class="not-prose">
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            @for ($i = 0; $i < 12; $i++)
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="/images/7.avif" alt="Galerijas attēls">
-                </div>
-            @endfor
-        </div>
+        @include('includes.gallery')
     </example>
 
 

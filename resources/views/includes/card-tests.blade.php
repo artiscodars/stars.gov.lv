@@ -13,7 +13,7 @@
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
         <div class="flex justify-content-start w-full lg:w-auto">
             <button type="button"
-                class="text-white bg-primary hover:opacity-70 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Atvērt</button>
+                class="text-white bg-primary hover:opacity-70 focus:ring-4 focus:ring-third font-medium rounded-md text-sm px-10 py-2.5 ">Iepazīties</button>
         </div>
 
     </div>
