@@ -213,7 +213,7 @@
                         "children": []
                     },
                     {
-                        "name": "Programmu katalogs",
+                        "name": "Ieteicamo programmu katalogs",
                         "route": "piemeri/mans-konts/programmu-katalogs",
                         "children": []
                     },
