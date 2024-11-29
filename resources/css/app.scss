@@ -122,3 +122,51 @@ example {
         }
     }
 }
+
+//accessibility
+
+.asw-menu-btn {
+    z-index: 500000;
+    box-shadow: 0 5px 15px 0 rgb(37 44 97 / 15%),
+        0 2px 4px 0 rgb(93 100 148 / 20%);
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    border: 3px solid #fff !important;
+    outline: 2px solid #2d233d !important;
+    text-decoration: none !important;
+    background: #2d233d !important;
+    background: linear-gradient(96deg, #554570 0, #2d233d 100%) !important;
+    position: relative; /* Remove fixed positioning to allow manual placement */
+}
+.asw-menu-btn svg {
+    width: 20px;
+    height: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    background: transparent !important;
+}
+.asw-menu-btn:hover {
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 768px) {
+    .asw-menu-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .asw-menu-btn svg {
+        width: 20px;
+        height: 20px;
+        min-height: 20px;
+        min-width: 20px;
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
