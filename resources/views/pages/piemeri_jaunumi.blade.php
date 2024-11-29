@@ -91,24 +91,7 @@
     </div>
 
     <div class="flex items-center justify-center space-x-4 text-ig-primary py-6">
-        <!-- Previous Button -->
-        <button class="text-2xl focus:outline-none">
-            <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.2305 20L1.9997 10.5L12.2305 1" stroke="#2D233D" stroke-width="2" />
-            </svg>
-
-        </button>
-
-        <!-- Page Info -->
-        <span class="text-lg px-10">2 NO 10</span>
-
-        <!-- Next Button -->
-        <button class="text-2xl  focus:outline-none">
-            <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.769531 1L11.0003 10.5L0.769535 20" stroke="#2D233D" stroke-width="2" />
-            </svg>
-
-        </button>
+        @include('includes.paginator')
     </div>
 
 </div>
