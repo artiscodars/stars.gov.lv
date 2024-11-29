@@ -30,7 +30,52 @@
 
 
 
-        </examp le>
+    </example>
+
+    <example class="not-prose">
+        <div class="bg-secondary text-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <div class="relative text-xl font-semibold mb-4 font-serif italic">
+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis felis ut mi vehicula
+                fermentum."
+            </div>
+
+            <p class="text-sm font-mediumm text-end text-warning">/ Alfrēds Kalniņš /</p>
+        </div>
+
+
+
+    </example>
+
+    <example class="not-prose">
+        <div class=" bg-beige p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <div class="relative text-xl font-semibold mb-4 font-serif italic">
+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis felis ut mi vehicula
+                fermentum."
+            </div>
+
+            <p class="text-sm font-mediumm text-end ">/ Alfrēds Kalniņš /</p>
+        </div>
+
+
+
+    </example>
+
+    <example class="not-prose">
+        <div class=" bg-light p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <div class="relative text-xl font-semibold mb-4 font-serif italic">
+
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis felis ut mi vehicula
+                fermentum."
+            </div>
+
+            <p class="text-sm font-mediumm text-end ">/ Alfrēds Kalniņš /</p>
+        </div>
+
+
+
+    </example>
 </div>
 
 @endsection

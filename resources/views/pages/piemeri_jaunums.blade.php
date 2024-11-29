@@ -16,7 +16,7 @@
             <div>02.10.2023</div>
             <div class="uppercase">Raksta autors vai atsauce uz avotu</div>
         </div>
-        <div class="flex-1 pl-0 md:pl-28">
+        <div class="flex-1 ">
             <div class="prose">
 
                 <p class="font-bold">Nodarbinātie no 25 gadu vecuma vēl līdz 30. novembrim var iesniegt dokumentus
@@ -54,13 +54,16 @@
                     arī
                     tiem, kas izglītību ir ieguvuši vienā nozarē, tomēr faktiski strādā citā.
                 </p>
-                <blockquote>
-                    Ja uzkrātā pieredze un zināšanas atbilst nepieciešamajam līmenim, nodarbinātie var iegūt
-                    kvalifikāciju,
-                    nokārtojot profesionālās kvalifikācijas eksāmenu kādā no akreditētajām profesionālās izglītības
-                    iestādēm
-                    vai akreditētajiem nozaru eksaminācijas centriem visā Latvijā.
-                </blockquote>
+                <div class=" bg-beige p-8 rounded-lg shadow-lg max-w-xl mx-auto mb-8">
+                    <div class="relative text-xl font-semibold mb-4 font-serif italic">
+
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis felis ut mi
+                        vehicula
+                        fermentum."
+                    </div>
+
+                    <p class="text-sm font-mediumm text-end m-0">/ Alfrēds Kalniņš /</p>
+                </div>
                 <p>
                     Profesionālās kvalifikācijas eksāmens ir maksas pakalpojums, un maksa par eksāmena kārtošanu dažādās
                     profesijās ir noteikta attiecīgo MK noteikumu cenrādī. Kopš 2017. gada nodarbinātie no 25 gadu
@@ -103,6 +106,7 @@
         </div>
     </div>
 </div>
+
 
 
 @endsection
