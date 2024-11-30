@@ -58,7 +58,7 @@
 
                 <div class="lg:hidden flex items-center gap-4">
                     <!-- Search Button -->
-                    <button class="btn btn-ghost btn-circle p-3">
+                    <button id="openLightbox" class="btn btn-ghost btn-circle p-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -81,6 +81,30 @@
 </div>
 
 
+<!-- Lightbox Container -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-50 hidden z-[99999999999999] p-6">
+    <div class="relative w-full h-full flex items-start justify-center">
+        <!-- Lightbox Content -->
+        <div class="bg-white p-6 rounded-lg shadow-lg w-[500px] max-w-full relative mt-16">
+            <!-- Close Button -->
+            <button id="closeLightbox"
+                class="absolute -top-4 -right-4 text-white hover:bg-secondary bg-primary rounded-full p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+
+            <input type="text"
+                class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Meklēt...">
+        </div>
+    </div>
+</div>
+
+
+
 <script>
     function toggleNavMenu() {
         const
@@ -92,5 +116,6 @@
             navMenu.classList.remove("translate-x-0");
             navMenu.classList.add("translate-x-[100%]");
         }
+
     }
 </script>
