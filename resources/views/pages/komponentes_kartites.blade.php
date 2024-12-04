@@ -34,34 +34,41 @@
 
             @include('includes.card-programma', [
             'severity' => 'primary',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
 
             @include('includes.card-programma', [
             'severity' => 'secondary',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
 
             @include('includes.card-programma', [
             'severity' => 'third',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
 
             @include('includes.card-programma', [
             'severity' => 'success',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
             @include('includes.card-programma', [
             'severity' => 'success-dark',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
             @include('includes.card-programma', [
             'severity' => 'warning',
+            'veids' => 'Attēlināti',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
 
             @include('includes.card-programma', [
             'severity' => 'error',
+            'veids' => 'Klātienē',
             'title' => '2.līmenis “Pamata digitālās pašapkalpošanās prasmes” (tālmācības programma)'
             ])
         </div>

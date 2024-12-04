@@ -11,6 +11,8 @@
             <span class="text-sm font-medium text-primary">700 EUR</span>
             <span class="text-sm font-medium text-primary">|</span>
             <span class="text-sm font-medium text-primary">2 NED</span>
+            <span class="text-sm font-medium text-primary">|</span>
+            <span class="text-sm font-medium text-primary">{{ $veids ?? 'Unknown' }}</span>
 
         </div>
         <p class="font-normal text-primary text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing
