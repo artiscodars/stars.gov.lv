@@ -267,7 +267,11 @@
                 "route": "piemeri/izglitibas-iestades-pieteikums"
             },
             {
-                "name": "Testi",
+                "name": "Testu kategorijas",
+                "route": "piemeri/testu-kategorijas"
+            },
+            {
+                "name": "Testu saraksts",
                 "route": "piemeri/testi"
             },
             {

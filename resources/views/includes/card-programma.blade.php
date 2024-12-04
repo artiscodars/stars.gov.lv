@@ -4,6 +4,10 @@
 
         <h5 class="mb-2 text-lg font-medium tracking-tight text-primary dark:text-white leading-6">{{ $title }}</h5>
         <div class="pb-3 flex gap-2">
+            @include('includes.stars', ['stars' => $stars ?? 5])
+
+        </div>
+        <div class="pb-3 flex gap-2">
             <span class="text-sm font-medium text-primary">700 EUR</span>
             <span class="text-sm font-medium text-primary">|</span>
             <span class="text-sm font-medium text-primary">2 NED</span>

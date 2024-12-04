@@ -2,7 +2,11 @@
 
 @section('content')
 <div>
-    <h1 class="text-4xl font-medium mb-4 mt-0">Izglītības programmas nosaukums ne pārāk garšs ne pārāk īss.</h1>
+    <h1 class="text-4xl font-medium mb-4 mt-0">2.līmenis "Pamata digitālās pašapkalpošanās prasmes"</h1>
+    <div class="pb-3 flex gap-2">
+        @include('includes.stars', ['stars' => $stars ?? 5])
+
+    </div>
 
     <button class="bg-primary text-white px-4 py-2 rounded-lg mt-4">Pieteikties</button>
 
@@ -22,41 +26,41 @@
             <div class="font-semibold py-2">Programmas veids</div>
             <div class="border-l border-primary pl-6 py-2">Moduļu kopa</div>
 
-            <div class="font-semibold py-2">Nozare</div>
-            <div class="border-l border-primary pl-6 py-2">Enerģētika</div>
+            <div class="font-semibold py-2">Stundu skaits</div>
+            <div class="border-l border-primary pl-6 py-2">120</div>
 
-            <div class="font-semibold py-2">Izglītības tematiska joma</div>
-            <div class="border-l border-primary pl-6 py-2">Civilā un militārā aizsardzība</div>
+            <div class="font-semibold py-2">Mācību forma</div>
+            <div class="border-l border-primary pl-6 py-2">Klātiene</div>
 
-            <div class="font-semibold py-2">Programmas apraksts</div>
-            <div class="border-l border-primary pl-6 py-2">Sed nisi laboris sed consequatur, pariatur...</div>
+            <div class="font-semibold py-2">Mācību valoda</div>
+            <div class="border-l border-primary pl-6 py-2">Latviešu</div>
 
-            <div class="font-semibold py-2">Licences Nr/ID</div>
-            <div class="border-l border-primary pl-6 py-2">76</div>
+            <div class="font-semibold py-2">Maksimālais dalībnieku skaits mācību grupā</div>
+            <div class="border-l border-primary pl-6 py-2">25</div>
 
-            <div class="font-semibold py-2">Izglītības dokuments</div>
-            <div class="border-l border-primary pl-6 py-2">Diploms</div>
+
         </div>
 
         <!-- Right Column -->
         <div class="grid grid-cols-2 ">
-            <div class="font-semibold py-2">Piešķiramā kvalifikācija</div>
-            <div class="border-l border-primary pl-6 py-2">Datoru sistēmu tehniķis (4.PKL)</div>
 
-            <div class="font-semibold py-2">Īstenošanas periods (nedēļas)</div>
-            <div class="border-l border-primary pl-6 py-2">3-5</div>
 
-            <div class="font-semibold py-2">Galvenās tēmas</div>
-            <div class="border-l border-primary pl-6 py-2">Sit, aliquip unde iusto repudiandae...</div>
+            <div class="font-semibold py-2">Brīvo vietu skaits</div>
+            <div class="border-l border-primary pl-6 py-2">70/100</div>
 
-            <div class="font-semibold py-2">Paredzētais mācību norises laiks</div>
-            <div class="border-l border-primary pl-6 py-2">darba dienās, darba laikā...</div>
+            <div class="font-semibold py-2">Iegūstamais izglītības dokuments</div>
+            <div class="border-l border-primary pl-6 py-2">Apliecība</div>
 
-            <div class="font-semibold py-2">Programmas kods</div>
-            <div class="border-l border-primary pl-6 py-2">76</div>
+            <div class="font-semibold py-2">Priekšzināšanas</div>
+            <div class="border-l border-primary pl-6 py-2">Iemaņas darbam ar datoru </div>
 
-            <div class="font-semibold py-2">Priekšzināšanu līmenis</div>
-            <div class="border-l border-primary pl-6 py-2">Blanditiis tempore, ducimus, qui facilis...</div>
+            <div class="font-semibold py-2">Līdzmaksājums</div>
+            <div class="border-l border-primary pl-6 py-2">0,00 €</div>
+
+            <div class="font-semibold py-2">Mācību izmaksas par vienu dalībnieku</div>
+            <div class="border-l border-primary pl-6 py-2">325,00 €</div>
+
+
         </div>
     </div>
 
